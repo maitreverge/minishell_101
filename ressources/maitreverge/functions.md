@@ -3,6 +3,59 @@
 <br>
 
 - [readline](#readline)
+- [rl_clear_history](#rl_clear_history)
+- [rl_on_new_line](#rl_on_new_line)
+- [rl_replace_line](#rl_replace_line)
+- [rl_redisplay](#rl_redisplay)
+- [add_history](#add_history)
+- [printf](#printf)
+- [malloc](#malloc)
+- [free](#free)
+- [write](#write)
+- [access](#access)
+- [open](#open)
+- [read](#read)
+- [close](#close)
+- [fork](#fork)
+- [wait](#wait)
+- [waitpid](#waitpid)
+- [wait3](#wait3)
+- [wait4](#wait4)
+- [signal](#signal)
+- [sigaction](#sigaction)
+- [sigemptyset](#sigemptyset)
+- [sigaddset](#sigaddset)
+- [kill](#kill)
+- [exit](#exit)
+- [getcwd](#getcwd)
+- [chdir](#chdir)
+- [stat](#stat)
+- [lstat](#lstat)
+- [fstat](#fstat)
+- [unlink](#unlink)
+- [execve](#execve)
+- [dup](#dup)
+- [dup2](#dup2)
+- [pipe](#pipe)
+- [opendir](#opendir)
+- [readdir](#readdir)
+- [closedir](#closedir)
+- [strerror](#strerror)
+- [perror](#perror)
+- [isatty](#isatty)
+- [ttyname](#ttyname)
+- [ttyslot](#ttyslot)
+- [ioctl](#ioctl)
+- [getenv](#getenv)
+- [tcsetattr](#tcsetattr)
+- [tcgetattr](#tcgetattr)
+- [tgetent](#tgetent)
+- [tgetflag](#tgetflag)
+- [tgetnum](#tgetnum)
+- [tgetstr](#tgetstr)
+- [tgoto](#tgoto)
+- [tputs](#tputs)
+
 
 </details>
 <hr>
@@ -38,7 +91,7 @@ int main() {
 
 ---------------------------------------------------------------------------------
 
-RL_CLEAR_HISTORY
+# RL_CLEAR_HISTORY
 
 
 The rl_clear_history function is part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
@@ -77,7 +130,7 @@ After the loop, rl_clear_history is called to clear the history list.
 
 
 ---------------------------------------------------------------------------------
-RL_ON_NEW_LINE
+# RL_ON_NEW_LINE
 
 The rl_on_new_line function is part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
 
@@ -109,7 +162,7 @@ In this example, the program prompts the user to enter a line of text, then prin
 
 
 ---------------------------------------------------------------------------------
-RL_REPLACE_LINE
+# RL_REPLACE_LINE
 
 The rl_replace_line function is part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
 
@@ -142,7 +195,7 @@ The memory allocated by readline is freed after it's no longer needed.
 
 
 ---------------------------------------------------------------------------------
-RL_REDISPLAY
+# RL_REDISPLAY
 
 The rl_redisplay function is part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
 
@@ -176,7 +229,7 @@ The memory allocated by readline is freed after it's no longer needed.
 
 
 ---------------------------------------------------------------------------------
-ADD_HISTORY
+# ADD_HISTORY
 
 The add_history function is part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
 
@@ -210,7 +263,7 @@ and the memory allocated by readline is freed after it's no longer needed.
 
 
 ---------------------------------------------------------------------------------
-ACCESS
+# ACCESS
 
 The access function is a standard C function that checks the file's accessibility.
 
@@ -244,7 +297,7 @@ it prints "File exists.", otherwise it prints "File doesn't exist.".
 
 
 ---------------------------------------------------------------------------------
-OPEN
+# OPEN
 
 The open function is a standard C function that opens a file or device.
 
@@ -281,7 +334,7 @@ If the file cannot be opened, it prints "Failed to open file.".
 
 
 ---------------------------------------------------------------------------------
-READ
+# READ
 
 The read function is a standard C function that reads data from a file.
 
@@ -327,7 +380,7 @@ it prints "Failed to read from file.". After reading, the file is closed.
 
 
 ---------------------------------------------------------------------------------
-CLOSE
+# CLOSE
 
 The close function is a standard C function that closes a file descriptor.
 
@@ -368,7 +421,7 @@ In this example, the program attempts to open the file myfile.txt in read-only m
 If the file cannot be closed, it prints "Failed to close file.".
 
 ---------------------------------------------------------------------------------
-FORK
+# FORK
 
 The fork function is a standard C function that creates a new process.
 
@@ -408,7 +461,7 @@ and the child process prints "This is the child process.".
 
 
 ---------------------------------------------------------------------------------
-WAIT
+# WAIT
 
 The wait function is a standard C function that makes a parent process wait until one of its child processes exits.
 
@@ -449,9 +502,8 @@ In this example, the program creates a new process using fork. If fork fails, it
 before printing "This is the parent process, child has exited.".
 
 
-
 ---------------------------------------------------------------------------------
-WAITPID
+# WAITPID
 
 The waitpid function is a standard C function that makes a parent process wait for a specific child process to exit.
 
@@ -494,7 +546,7 @@ to exit before printing "This is the parent process, child has exited.".
 
 
 ---------------------------------------------------------------------------------
-WAIT3
+# WAIT3
 
 The wait3 function is a standard C function that suspends the calling process until one of its child processes terminates.
 
@@ -539,7 +591,7 @@ resource usage before printing "This is the parent process, child has exited.".
 
 
 ---------------------------------------------------------------------------------
-WAIT4
+# WAIT4
 
 The wait4 function is a standard C function that suspends the calling process until a specific child process terminates.
 
@@ -584,7 +636,7 @@ resource usage before printing "This is the parent process, child has exited.".
 
 
 ---------------------------------------------------------------------------------
-SIGNAL
+# SIGNAL
 
 The signal function is a standard C function that sets a function to handle a signal.
 
@@ -624,7 +676,7 @@ In this example, the program sets a function handle_sigint to handle the SIGINT 
 
 
 ---------------------------------------------------------------------------------
-SIGACTION
+# SIGACTION
 
 The sigaction function is a standard C function that allows you to examine and change a signal action.
 
@@ -668,7 +720,7 @@ indefinitely, printing "Running..." every second, until it receives a SIGINT sig
 
 
 ---------------------------------------------------------------------------------
-SIGEMPTYSET
+# SIGEMPTYSET
 
 The sigemptyset function is a standard C function that initializes a signal set to be empty.
 
@@ -703,7 +755,7 @@ If sigemptyset fails, it prints "Failed to initialize signal set.".
 
 
 ---------------------------------------------------------------------------------
-SIGADDSET
+# SIGADDSET
 
 The sigaddset function is a standard C function that adds a specified signal to a signal set.
 
@@ -740,7 +792,7 @@ If sigaddset fails, it prints "Failed to add SIGINT to the signal set.".
 
 
 ---------------------------------------------------------------------------------
-KILL
+# KILL
 
 The kill function is a standard C function that sends a signal to a specific process or a group of processes.
 
@@ -773,7 +825,7 @@ you can continue the process with the fg command if you're running it in a termi
 
 
 ---------------------------------------------------------------------------------
-EXIT
+# EXIT
 
 The exit function is a standard C function that terminates the calling process.
 
@@ -804,7 +856,7 @@ The exit status of the process is 0, which usually indicates successful terminat
 
 
 ---------------------------------------------------------------------------------
-GETCWD
+# GETCWD
 
 The getcwd function is a standard C function that gets the current working directory of the process.
 
@@ -838,7 +890,7 @@ In this example, the program gets the current working directory using getcwd and
 If getcwd fails, it prints "Failed to get current working directory.".
 
 ---------------------------------------------------------------------------------
-CHDIR
+# CHDIR
 
 The chdir function is a standard C function that changes the current working directory of the process.
 
@@ -872,7 +924,7 @@ If chdir fails, it prints "Failed to change the current working directory.".
 
 
 ---------------------------------------------------------------------------------
-STAT
+# STAT
 
 The stat function is a standard C function that gets file status.
 
@@ -907,7 +959,7 @@ In this example, the program gets the status of the directory /tmp using stat an
 
 
 ---------------------------------------------------------------------------------
-LSTAT
+# LSTAT
 
 The lstat function is a standard C function that gets file status, similar to stat, but if the file is a symbolic link, lstat returns information about the link itself, not the file it refers to.
 
@@ -942,7 +994,7 @@ If lstat fails, it prints "Failed to get the status of /tmp/symlink.".
 
 
 ---------------------------------------------------------------------------------
-FSTAT
+# FSTAT
 
 The fstat function is a standard C function that gets the status of an open file.
 
@@ -984,7 +1036,7 @@ If the file fails to open, it prints "Failed to open /tmp/file.".
 
 
 ---------------------------------------------------------------------------------
-UNLINK
+# UNLINK
 
 The unlink function is a standard C function that removes a specified file.
 
@@ -1018,7 +1070,7 @@ If unlink succeeds, it prints "Removed /tmp/file". If unlink fails, it prints "F
 
 
 ---------------------------------------------------------------------------------
-EXECVE
+# EXECVE
 
 The execve function is a standard C function that replaces the current process image with a new process image.
 
@@ -1052,7 +1104,7 @@ If execve succeeds, the rest of the program will not be executed because the pro
 
 
 ---------------------------------------------------------------------------------
-DUP
+# DUP
 
 The dup function is a standard C function that creates a copy of the file descriptor.
 
@@ -1094,7 +1146,7 @@ If dup fails, it prints "Failed to duplicate file descriptor.". If the file fail
 
 
 ---------------------------------------------------------------------------------
-DUP2
+# DUP2
 
 The dup2 function is a standard C function that duplicates a file descriptor to a specified file descriptor.
 
@@ -1136,7 +1188,7 @@ If the file fails to open, it prints "Failed to open /tmp/file.".
 
 
 ---------------------------------------------------------------------------------
-PIPE
+# PIPE
 
 The pipe function is a standard C function that creates a pipe, which is a unidirectional data channel that can be used for interprocess communication.
 
@@ -1171,7 +1223,7 @@ followed by the write file descriptor. If pipe fails, it prints "Failed to creat
 
 
 ---------------------------------------------------------------------------------
-OPENDIR
+# OPENDIR
 
 The opendir function is a standard C function that opens a directory stream corresponding to the directory name, and returns a pointer to the directory stream. The stream is positioned at the first entry in the directory.
 
@@ -1207,7 +1259,7 @@ After it's done with the directory, it closes the directory stream using closedi
 
 
 ---------------------------------------------------------------------------------
-READDIR
+# READDIR
 
 The readdir function is a standard C function that reads the next directory entry from the directory stream dir.
 
@@ -1246,7 +1298,7 @@ After it's done with the directory, it closes the directory stream using closedi
 
 
 ---------------------------------------------------------------------------------
-CLOSEDIR
+# CLOSEDIR
 
 The closedir function is a standard C function that closes a directory stream.
 
@@ -1289,7 +1341,7 @@ If opendir fails, it prints "Failed to open the directory /tmp.".
 
 
 ---------------------------------------------------------------------------------
-STRERROR
+# STRERROR
 
 The strerror function is a standard C function that returns a string describing the error code passed in the argument errno.
 
@@ -1323,7 +1375,7 @@ it prints the error message associated with the current errno value using strerr
 
 
 ---------------------------------------------------------------------------------
-PERROR
+# PERROR
 
 The perror function is a standard C function that prints a descriptive error message to stderr.
 
@@ -1355,7 +1407,7 @@ The output will be something like "Error opening file: No such file or directory
 
 
 --------------------------------------------------------------------------------
-ISATTY
+# ISATTY
 
 The isatty function is a standard C function that checks if a file descriptor refers to a terminal.
 
@@ -1389,7 +1441,7 @@ If isatty returns 0, it prints "STDOUT is not a terminal.".
 
 
 ---------------------------------------------------------------------------------
-TTYNAME
+# TTYNAME
 
 The ttyname function is a standard C function that returns a pointer to a string which describes the terminal device that is open on the file descriptor fd.
 
@@ -1424,7 +1476,7 @@ If ttyname returns NULL, it prints "STDOUT is not a terminal.".
 
 
 ---------------------------------------------------------------------------------
-TTYSLOT
+# TTYSLOT
 
 The ttyslot function is a standard C function that returns the index of the current user's terminal in the system's utmp file (a record of all logins and logouts).
 
@@ -1459,7 +1511,7 @@ it prints "The process is not attached to a terminal, or an error occurred.".
 
 
 ---------------------------------------------------------------------------------
-IOCTL
+# IOCTL
 
 The ioctl function is a standard C function that provides a generic interface for various I/O operations.
 
@@ -1495,7 +1547,7 @@ If ioctl fails, it prints an error message using perror.
 
 
 ---------------------------------------------------------------------------------
-GETENV
+# GETENV
 
 The getenv function is a standard C function that retrieves the value of an environment variable.
 
@@ -1530,7 +1582,7 @@ If getenv returns NULL, it prints "PATH environment variable not found.".
 
 
 ---------------------------------------------------------------------------------
-TCSETATTR
+# TCSETATTR
 
 The tcsetattr function is a standard C function that sets the parameters associated with the terminal.
 
@@ -1569,7 +1621,7 @@ If tcgetattr fails, it also prints an error message using perror.
 
 
 ---------------------------------------------------------------------------------
-TCGETATTR
+# TCGETATTR
 
 The tcgetattr function is a standard C function that gets the parameters associated with the terminal.
 
@@ -1605,7 +1657,7 @@ If tcgetattr fails, it prints an error message using perror.
 
 
 ---------------------------------------------------------------------------------
-TGETENT
+# TGETENT
 
 The tgetflag function is a part of the termcap library in Unix-like operating systems that checks for the existence of a boolean capability in the termcap entry.
 
@@ -1645,7 +1697,7 @@ it prints "Failed to load termcap entry for " followed by the terminal type.
 
 
 ---------------------------------------------------------------------------------
-TGETFLAG
+# TGETFLAG
 
 The tgetflag function is a part of the termcap library in Unix-like operating systems that checks for the existence of a boolean capability in the termcap entry.
 
@@ -1685,7 +1737,7 @@ it prints "Failed to load termcap entry for " followed by the terminal type.
 
 
 ---------------------------------------------------------------------------------
-TGETNUM
+# TGETNUM
 
 The tgetnum function is a part of the termcap library in Unix-like operating systems that retrieves the numeric value of a capability from the termcap entry.
 
@@ -1726,7 +1778,7 @@ it prints "The number of columns is not defined for this terminal.". If tgetent 
 
 
 ---------------------------------------------------------------------------------
-TGETSTR
+# TGETSTR
 
 The tgetstr function is a part of the termcap library in Unix-like operating systems that retrieves the string value of a capability from the termcap entry.
 
@@ -1769,7 +1821,7 @@ it prints "Failed to load termcap entry for " followed by the terminal type.
 
 
 ---------------------------------------------------------------------------------
-TGOTO
+# TGOTO
 
 The tgoto function is a part of the termcap library in Unix-like operating systems that formats a cursor addressing string.
 
@@ -1814,7 +1866,7 @@ If tgetstr returns a non-null pointer, it formats the sequence to move the curso
 
 
 ---------------------------------------------------------------------------------
-TPUTS
+# TPUTS
 
 The tputs function is a part of the termcap library in Unix-like operating systems that outputs a termcap string to the terminal.
 
