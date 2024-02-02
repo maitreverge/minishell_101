@@ -38,7 +38,7 @@ The rl_clear_history function is part of the GNU Readline library, which provide
 
 - ***Function Description***:: rl_clear_history clears the history list by freeing the memory of each element in the list and setting the length of the list to zero.
 
-- ***Prototype***: void rl_clear_history(void);
+- ***Prototype***: `void rl_clear_history(void);`
 
 - ***Library***:
 ```c
@@ -76,7 +76,7 @@ The rl_on_new_line function is part of the GNU Readline library, which provides 
 
 - ***Function Description***:: rl_on_new_line tells the readline library that the cursor is on a new line, so it should reset its idea of the cursor position. It's often used after a newline character has been printed or the readline input line has been cleared.
 
-- ***Prototype***: int rl_on_new_line(void);
+- ***Prototype***: `int rl_on_new_line(void);`
 
 - ***Library***:
 ```c
@@ -108,7 +108,7 @@ The rl_replace_line function is part of the GNU Readline library, which provides
 
 - ***Function Description***:: rl_replace_line replaces the contents of the current readline buffer with the string passed as an argument.
 
-- ***Prototype***: int rl_replace_line(const char *text, int clear_undo);
+- ***Prototype***: `int rl_replace_line(const char *text, int clear_undo);`
 
 - ***Library***:
 ```c
@@ -141,7 +141,7 @@ The rl_redisplay function is part of the GNU Readline library, which provides a 
 
 - ***Function Description***:: rl_redisplay causes readline to update the screen to reflect the current contents of the readline buffer.
 
-- ***Prototype***: void rl_redisplay(void);
+- ***Prototype***: `void rl_redisplay(void);`
 
 - ***Library***:
 ```c
@@ -175,7 +175,7 @@ The add_history function is part of the GNU Readline library, which provides a s
 
 - ***Function Description***:: add_history adds the string passed as an argument to the history list.
 
-- ***Prototype***: void add_history(const char *line);
+- ***Prototype***: `void add_history(const char *line);`
 
 - ***Library***:
 ```c
@@ -209,7 +209,7 @@ The access function is a standard C function that checks the file's accessibilit
 
 - ***Function Description***:: access checks whether the calling process can access the file pathname. It checks the file's permissions based on the mode parameter which can be F_OK (tests for the existence of the file), R_OK (tests for read permission), W_OK (tests for write permission), and X_OK (tests for execute or search permission).
 
-- ***Prototype***: int access(const char *pathname, int mode);
+- ***Prototype***: `int access(const char *pathname, int mode);`
 
 - ***Library***:
 ```c
@@ -243,7 +243,7 @@ The open function is a standard C function that opens a file or device.
 
 - ***Function Description***:: open opens the file specified by pathname. The flags parameter determines the file access mode (read, write, read/write, create, etc.). It returns a file descriptor for the opened file, or -1 if an error occurs.
 
-- ***Prototype***: int open(const char *pathname, int flags);
+- ***Prototype***: `int open(const char *pathname, int flags);`
 
 - ***Library***:
 ```c
@@ -280,7 +280,7 @@ The read function is a standard C function that reads data from a file.
 
 - ***Function Description***:: read reads up to count bytes from the file referenced by the file descriptor fd, storing the results in the buffer.
 
-- ***Prototype***: ssize_t read(int fd, void *buf, size_t count);
+- ***Prototype***: `ssize_t read(int fd, void *buf, size_t count);`
 
 - ***Library***:
 ```c 
@@ -326,7 +326,7 @@ The close function is a standard C function that closes a file descriptor.
 
 - ***Function Description***:: close closes a file descriptor, so that it no longer refers to any file and may be reused. It returns zero on success, or -1 if an error occurs.
 
-- ***Prototype***: int close(int fd);
+- ***Prototype***: `int close(int fd);`
 
 - ***Library***:
 ```c
@@ -367,7 +367,7 @@ The fork function is a standard C function that creates a new process.
 
 - ***Function Description***:: fork creates a new process by duplicating the existing process. The new process, called the child, is an exact copy of the calling process, called the parent, except for a few values changed, including the process ID and parent process ID. It returns the process ID of the child process to the parent, and 0 to the child. If it fails, it returns -1.
 
-- ***Prototype***: pid_t fork(void);
+- ***Prototype***: `pid_t fork(void);`
 
 - ***Library***:
 ```c
@@ -407,7 +407,7 @@ The wait function is a standard C function that makes a parent process wait unti
 
 - ***Function Description***:: wait suspends the calling process until one of its child processes exits. It returns the process ID of the child process that exited, or -1 if an error occurs. The exit status of the child process is stored in the integer pointed to by the status parameter.
 
-- ***Prototype***: pid_t wait(int *status);
+- ***Prototype***: `pid_t wait(int *status);`
 
 - ***Library***:
 ```c
@@ -450,7 +450,7 @@ The waitpid function is a standard C function that makes a parent process wait f
 
 - ***Function Description***:: waitpid suspends the calling process until the specified child process exits. It returns the process ID of the child process that exited, 0 if the child is still running, or -1 if an error occurs. The exit status of the child process is stored in the integer pointed to by the status parameter.
 
-- ***Prototype***: pid_t waitpid(pid_t pid, int *status, int options);
+- ***Prototype***: `pid_t waitpid(pid_t pid, int *status, int options);`
 
 - ***Library***:
 ```c
@@ -493,7 +493,7 @@ The wait3 function is a standard C function that suspends the calling process un
 
 - ***Function Description***:: wait3 suspends the calling process until a child process terminates. It also returns resource usage information about the child in the structure pointed to by rusage. It returns the process ID of the child process that terminated, or -1 if an error occurs.
 
-- ***Prototype***: pid_t wait3(int *status, int options, struct rusage *rusage);
+- ***Prototype***: `pid_t wait3(int *status, int options, struct rusage *rusage);`
 
 - ***Library***:
 ```c
@@ -538,7 +538,7 @@ The wait4 function is a standard C function that suspends the calling process un
 
 - ***Function Description***:: wait4 suspends the calling process until the child process specified by pid terminates. It also returns resource usage information about the child in the structure pointed to by rusage. It returns the process ID of the child process that terminated, or -1 if an error occurs.
 
-- ***Prototype***: pid_t wait4(pid_t pid, int *status, int options, struct rusage *rusage);
+- ***Prototype***: `pid_t wait4(pid_t pid, int *status, int options, struct rusage *rusage);`
 
 - ***Library***:
 ```c
@@ -583,7 +583,7 @@ The signal function is a standard C function that sets a function to handle a si
 
 - ***Function Description***:: signal sets a function to handle a signal. The function (or action) to be called when the signal occurs is passed as the second argument. It returns the previous action for the signal, or SIG_ERR if an error occurs.
 
-- ***Prototype***: void (*signal(int sig, void (*func)(int)))(int);
+- ***Prototype***: `void (*signal(int sig, void (*func)(int)))(int);`
 
 - ***Library***:
 ```c
@@ -623,7 +623,7 @@ The sigaction function is a standard C function that allows you to examine and c
 
 - ***Function Description***:: sigaction allows you to examine and change a signal action. It can be used to get or set the action to be taken by a process on receipt of a specific signal.
 
-- ***Prototype***: int sigaction(int signum, const struct sigaction *act, struct sigaction *oldact);
+- ***Prototype***: `int sigaction(int signum, const struct sigaction *act, struct sigaction *oldact);`
 
 - ***Library***:
 ```c
@@ -667,7 +667,7 @@ The sigemptyset function is a standard C function that initializes a signal set 
 
 - ***Function Description***:: sigemptyset initializes a signal set to be empty. All signals are excluded from the set. It returns 0 on success, and -1 on error.
 
-- ***Prototype***: int sigemptyset(sigset_t *set);
+- ***Prototype***: `int sigemptyset(sigset_t *set);`
 
 - ***Library***:
 ```c
@@ -702,7 +702,7 @@ The sigaddset function is a standard C function that adds a specified signal to 
 
 - ***Function Description***:: sigaddset adds a specified signal to a signal set. It returns 0 on success, and -1 on error.
 
-- ***Prototype***: int sigaddset(sigset_t *set, int signum);
+- ***Prototype***: `int sigaddset(sigset_t *set, int signum);`
 
 - ***Library***:
 ```c
@@ -739,7 +739,7 @@ The kill function is a standard C function that sends a signal to a specific pro
 
 - ***Function Description***:: kill sends a signal to a process or a group of processes. The pid parameter specifies the process or group to send to, and the sig parameter specifies the signal to send. It returns 0 on success, and -1 on error.
 
-- ***Prototype***: int kill(pid_t pid, int sig);
+- ***Prototype***: `int kill(pid_t pid, int sig);`
 
 - ***Library***:
 ```c
@@ -772,7 +772,7 @@ The exit function is a standard C function that terminates the calling process.
 
 - ***Function Description***:: exit terminates the calling process and returns the exit status to the parent process. The status parameter is the exit status of the process.
 
-- ***Prototype***: void exit(int status);
+- ***Prototype***: `void exit(int status);`
 
 - ***Library***:
 ```c
@@ -803,7 +803,7 @@ The getcwd function is a standard C function that gets the current working direc
 
 - ***Function Description***:: getcwd gets the current working directory of the process. The buf parameter is a pointer to the buffer where the path is stored, and size is the size of the buffer. It returns a pointer to the buffer on success, and NULL on error.
 
-- ***Prototype***: char *getcwd(char *buf, size_t size);
+- ***Prototype***: `char *getcwd(char *buf, size_t size);`
 
 - ***Library***:
 ```c
@@ -837,7 +837,7 @@ The chdir function is a standard C function that changes the current working dir
 
 - ***Function Description***:: chdir changes the current working directory of the process to the directory specified by path. It returns 0 on success, and -1 on error.
 
-- ***Prototype***: int chdir(const char *path);
+- ***Prototype***: `int chdir(const char *path);`
 
 - ***Library***:
 ```c
@@ -871,7 +871,7 @@ The stat function is a standard C function that gets file status.
 
 - ***Function Description***:: stat gets the status of the file specified by path and fills in the buffer pointed to by buf. It returns 0 on success, and -1 on error.
 
-- ***Prototype***: int stat(const char *restrict path, struct stat *restrict buf);
+- ***Prototype***: `int stat(const char *restrict path, struct stat *restrict buf);`
 
 - ***Library***:
 ```c
@@ -906,7 +906,7 @@ The lstat function is a standard C function that gets file status, similar to st
 
 - ***Function Description***:: lstat gets the status of the file specified by path and fills in the buffer pointed to by buf. If the file is a symbolic link, lstat returns information about the link itself, not the file it refers to. It returns 0 on success, and -1 on error.
 
-- ***Prototype***: int lstat(const char *restrict path, struct stat *restrict buf);
+- ***Prototype***: `int lstat(const char *restrict path, struct stat *restrict buf);`
 
 - ***Library***:
 ```c
@@ -941,7 +941,7 @@ The fstat function is a standard C function that gets the status of an open file
 
 - ***Function Description***:: fstat gets the status of the open file associated with the file descriptor fd and fills in the buffer pointed to by buf. It returns 0 on success, and -1 on error.
 
-- ***Prototype***: int fstat(int fd, struct stat *buf);
+- ***Prototype***: `int fstat(int fd, struct stat *buf);`
 
 - ***Library***:
 ```c
@@ -983,7 +983,7 @@ The unlink function is a standard C function that removes a specified file.
 
 - ***Function Description***:: unlink removes the file at the path pathname. If the file is a symbolic link, the link is removed. The file is only actually removed if it is not open in any process. It returns 0 on success, and -1 on error.
 
-- ***Prototype***: int unlink(const char *pathname);
+- ***Prototype***: `int unlink(const char *pathname);`
 
 - ***Library***:
 ```c
@@ -1017,7 +1017,7 @@ The execve function is a standard C function that replaces the current process i
 
 - ***Function Description***:: execve replaces the current process image with a new process image specified by filename. The argv is an array of argument strings passed to the new program. The envp is an array of strings, conventionally of the form key=value, which are passed as environment to the new program. It does not return on success, and -1 on error.
 
-- ***Prototype***: int execve(const char *filename, char *const argv[], char *const envp[]);
+- ***Prototype***: `int execve(const char *filename, char *const argv[], char *const envp[]);`
 
 - ***Library***:
 ```c
@@ -1051,7 +1051,7 @@ The dup function is a standard C function that creates a copy of the file descri
 
 - ***Function Description***:: dup creates a new file descriptor that is a copy of the old file descriptor. The new file descriptor is the lowest-numbered unused descriptor. It returns the new file descriptor on success, and -1 on error.
 
-- ***Prototype***: int dup(int oldfd);
+- ***Prototype***: `int dup(int oldfd);`
 
 - ***Library***:
 ```c
@@ -1093,7 +1093,7 @@ The dup2 function is a standard C function that duplicates a file descriptor to 
 
 - ***Function Description***:: dup2 duplicates the file descriptor oldfd to newfd. If newfd was previously open, it is silently closed before being reused. If oldfd is not a valid file descriptor, then the call fails, and newfd is not closed. It returns the new file descriptor on success, and -1 on error.
 
-- ***Prototype***: int dup2(int oldfd, int newfd);
+- ***Prototype***: `int dup2(int oldfd, int newfd);`
 
 - ***Library***:
 ```c
@@ -1135,7 +1135,7 @@ The pipe function is a standard C function that creates a pipe, which is a unidi
 
 - ***Function Description***:: pipe creates a pipe and places two file descriptors, one for reading and one for writing, into the array pointed to by pipefd. pipefd[0] is for reading, pipefd[1] is for writing. It returns 0 on success, and -1 on error.
 
-- ***Prototype***: int pipe(int pipefd[2]);
+- ***Prototype***: `int pipe(int pipefd[2]);`
 
 - ***Library***:
 ```c
@@ -1170,7 +1170,7 @@ The opendir function is a standard C function that opens a directory stream corr
 
 - ***Function Description***:: opendir opens a directory stream corresponding to the directory name. The stream is positioned at the first entry in the directory. It returns a pointer to the directory stream. On error, NULL is returned.
 
-- ***Prototype***: DIR *opendir(const char *name);
+- ***Prototype***: `DIR *opendir(const char *name);`
 
 - ***Library***:
 ```c
@@ -1206,7 +1206,7 @@ The readdir function is a standard C function that reads the next directory entr
 
 - ***Function Description***:: readdir reads the next directory entry from the directory stream dir. It returns a pointer to a dirent structure representing the next directory entry in the directory stream pointed to by dir. It returns NULL on reaching the end of the directory stream or if an error occurred.
 
-- ***Prototype***: struct dirent *readdir(DIR *dir);
+- ***Prototype***: `struct dirent *readdir(DIR *dir);`
 
 - ***Library***:
 ```c
@@ -1245,7 +1245,7 @@ The closedir function is a standard C function that closes a directory stream.
 
 - ***Function Description***:: closedir closes the directory stream associated with dir. A successful call to closedir also closes the underlying file descriptor associated with dir. The directory stream descriptor dir is not available after this call. It returns 0 on success, and -1 on error.
 
-- ***Prototype***: int closedir(DIR *dir);
+- ***Prototype***: `int closedir(DIR *dir);`
 
 - ***Library***:
 ```c
@@ -1288,7 +1288,7 @@ The strerror function is a standard C function that returns a string describing 
 
 - ***Function Description***:: strerror returns a pointer to a string that describes the error code passed in the argument errnum. The string is actually a static buffer that is overwritten by each call to strerror.
 
-- ***Prototype***: char *strerror(int errnum);
+- ***Prototype***: `char *strerror(int errnum);`
 
 - ***Library***:
 ```c
@@ -1322,7 +1322,7 @@ The perror function is a standard C function that prints a descriptive error mes
 
 - ***Function Description***:: perror produces a message on the standard error output, describing the last error encountered during a call to a system or library function. It takes a string argument which is printed, followed by a colon and a space, and then the error message and a new line.
 
-- ***Prototype***: void perror(const char *str);
+- ***Prototype***: `void perror(const char *str);`
 
 - ***Library***:
 ```c
@@ -1354,7 +1354,7 @@ The isatty function is a standard C function that checks if a file descriptor re
 
 - ***Function Description***:: isatty checks if the file descriptor fd refers to a terminal. It returns 1 if fd is an open file descriptor referring to a terminal; otherwise 0 is returned, and errno is set to indicate the error.
 
-- ***Prototype***: int isatty(int fd);
+- ***Prototype***: `int isatty(int fd);`
 
 - ***Library***:
 ```c
@@ -1388,7 +1388,7 @@ The ttyname function is a standard C function that returns a pointer to a string
 
 - ***Function Description***:: ttyname returns a pointer to a string which describes the terminal device that is open on the file descriptor fd. The string is a static buffer that is overwritten by each call to ttyname. If fd is not an open file descriptor or if it is not associated with a terminal, NULL is returned.
 
-- ***Prototype***: char *ttyname(int fd);
+- ***Prototype***: `char *ttyname(int fd);`
 
 - ***Library***:
 ```c
@@ -1423,7 +1423,7 @@ The ttyslot function is a standard C function that returns the index of the curr
 
 - ***Function Description***:: ttyslot returns the index of the current user's terminal in the system's utmp file. If the user is not logged in, or the process is not attached to a terminal, or an error occurred, it returns 0.
 
-- ***Prototype***: int ttyslot(void);
+- ***Prototype***: `int ttyslot(void);`
 
 - ***Library***:
 ```c
@@ -1458,7 +1458,7 @@ The ioctl function is a standard C function that provides a generic interface fo
 
 - ***Function Description***:: ioctl manipulates the underlying device parameters of special files. In particular, many operating characteristics of character special files (e.g., terminals) may be controlled with ioctl requests. The argument fd must be an open file descriptor. The second argument is a device-dependent request code. The third argument is usually zero, or a pointer to a structure.
 
-- ***Prototype***: int ioctl(int fd, unsigned long request, ...);
+- ***Prototype***: `int ioctl(int fd, unsigned long request, ...);`
 
 - ***Library***:
 ```c
@@ -1494,7 +1494,7 @@ The getenv function is a standard C function that retrieves the value of an envi
 
 - ***Function Description***:: getenv searches the environment list provided by the host environment (the operating system, in most cases) to find the environment variable name, and returns a pointer to the value of the variable, or NULL if the variable is not found.
 
-- ***Prototype***: char *getenv(const char *name);
+- ***Prototype***: `char *getenv(const char *name);`
 
 - ***Library***:
 ```c
@@ -1529,7 +1529,7 @@ The tcsetattr function is a standard C function that sets the parameters associa
 
 - ***Function Description***:: tcsetattr sets the parameters associated with the terminal (unless support is required from the underlying hardware that is not available) from the termios structure referred to by termios_p. fd is the file descriptor of the terminal. The change is made immediately. If any requested change could not be successfully carried out, the function returns -1 and leaves the state of the terminal unchanged.
 
-- ***Prototype***: int tcsetattr(int fd, int optional_actions, const struct termios *termios_p);
+- ***Prototype***: `int tcsetattr(int fd, int optional_actions, const struct termios *termios_p);`
 
 - ***Library***:
 ```c
@@ -1568,7 +1568,7 @@ The tcgetattr function is a standard C function that gets the parameters associa
 
 - ***Function Description***:: tcgetattr gets the parameters associated with the terminal and stores them in the termios structure referenced by termios_p. fd is the file descriptor of the terminal. The function returns 0 on success, and -1 on failure.
 
-- ***Prototype***: int tcgetattr(int fd, struct termios *termios_p);
+- ***Prototype***: `int tcgetattr(int fd, struct termios *termios_p);`
 
 - ***Library***:
 ```c
@@ -1604,7 +1604,7 @@ The tgetflag function is a part of the termcap library in Unix-like operating sy
 
 - ***Function Description***:: tgetflag checks for the existence of a boolean capability id in the termcap entry. It returns 1 if the capability is found, and 0 if it is not found.
 
-- ***Prototype***: int tgetflag(char *id);
+- ***Prototype***: `int tgetflag(char *id);`
 
 - ***Library***:
 ```c
@@ -1644,7 +1644,7 @@ The tgetflag function is a part of the termcap library in Unix-like operating sy
 
 - ***Function Description***:: tgetflag checks for the existence of a boolean capability id in the termcap entry. It returns 1 if the capability is found, and 0 if it is not found.
 
-- ***Prototype***: int tgetflag(char *id);
+- ***Prototype***: `int tgetflag(char *id);`
 
 - ***Library***:
 ```c
@@ -1684,7 +1684,7 @@ The tgetnum function is a part of the termcap library in Unix-like operating sys
 
 - ***Function Description***:: tgetnum retrieves the numeric value of the capability id from the termcap entry. It returns the numeric value if the capability is found, and -1 if it is not found.
 
-- ***Prototype***: int tgetnum(char *id);
+- ***Prototype***: `int tgetnum(char *id);`
 
 - ***Library***:
 ```c
@@ -1725,7 +1725,7 @@ The tgetstr function is a part of the termcap library in Unix-like operating sys
 
 - ***Function Description***:: tgetstr retrieves the string value of the capability id from the termcap entry. It returns a pointer to the string if the capability is found, and NULL if it is not found.
 
-- ***Prototype***: char *tgetstr(char *id, char **area);
+- ***Prototype***: `char *tgetstr(char *id, char **area);`
 
 - ***Library***:
 ```c
@@ -1768,7 +1768,7 @@ The tgoto function is a part of the termcap library in Unix-like operating syste
 
 - ***Function Description***:: tgoto formats a cursor addressing string cm with the row destcol and column destline. It returns a pointer to a static area containing the escape sequence to move the cursor to the specified position.
 
-- ***Prototype***: char *tgoto(const char *cm, int destcol, int destline);
+- ***Prototype***: `char *tgoto(const char *cm, int destcol, int destline);`
 
 - ***Library***:
 ```c
@@ -1813,7 +1813,7 @@ The tputs function is a part of the termcap library in Unix-like operating syste
 
 - ***Function Description***:: tputs outputs the termcap string str to the terminal. It uses the function putc to output each character. The affcnt argument is the number of lines affected by the operation, or 1 if not applicable. The putc argument is a pointer to a function that takes a single character and outputs it to the terminal.
 
-- ***Prototype***: int tputs(const char *str, int affcnt, int (*putc)(int));
+- ***Prototype***: `int tputs(const char *str, int affcnt, int (*putc)(int));`
 
 - ***Library***:
 ```c
