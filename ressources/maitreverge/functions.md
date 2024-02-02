@@ -1,17 +1,21 @@
 ---------------------------------------------------------------------------------
 
-READLINE
+# READLINE
 
 The readline function is not a standard C function, but it's part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
 
-Function Description: readline reads a line from the terminal and returns it, allowing the user to edit the line with familiar key bindings and history capabilities.
+- ***Function Description***: readline reads a line from the terminal and returns it, allowing the user to edit the line with familiar key bindings and history capabilities.
 
-Prototype: char *readline(const char *prompt);
+- ***Prototype***: `char *readline(const char *prompt);`
 
-Library: #include <readline/readline.h>
+- ***Library***:
+```c
+#include <readline/readline.h>
+```
 
 Example:
 
+```c
 #include <stdio.h>
 #include <readline/readline.h>
 
@@ -21,8 +25,9 @@ int main() {
 	free(line);  // Don't forget to free the memory allocated by readline
 	return 0;
 }
+```
 
-In this example, the program prompts the user to enter a line of text, then prints the entered line. The memory allocated by readline is freed after it's no longer needed.
+*In this example, the program prompts the user to enter a line of text, then prints the entered line. The memory allocated by readline is freed after it's no longer needed.*
 
 ---------------------------------------------------------------------------------
 
