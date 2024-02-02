@@ -67,3 +67,6 @@ Your github username
 This will contain a README.md file describing in detail your contribution, how to make it work, and the prerequisites for your scripts!
 
 Remember that
+
+> [!WARNING]
+> 🚨 This README **will definitely** be missing some information/details, because I'm only taking what _I think_ is enough for me. If you're using this documentation to build your Makefile and something just does not work as expected, please refer to the corresponding section in the [GNU documentation](https://www.gnu.org/software/make/manual/make.html). 🚨
