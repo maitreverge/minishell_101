@@ -47,6 +47,7 @@ The rl_clear_history function is part of the GNU Readline library, which provide
 
 Example:
 
+```c
 #include <stdio.h>
 #include <readline/readline.h>
 #include <readline/history.h>
@@ -61,6 +62,8 @@ int main() {
 	rl_clear_history();
 	return 0;
 }
+```
+
 
 In this example, the program prompts the user to enter lines of text until an EOF (End Of File) character is received (Ctrl+D in Unix-like systems). Each entered line is added to the history.
 After the loop, rl_clear_history is called to clear the history list.
@@ -82,7 +85,7 @@ The rl_on_new_line function is part of the GNU Readline library, which provides 
 
 Example:
 
-
+```c
 #include <stdio.h>
 #include <readline/readline.h>
 
@@ -93,6 +96,7 @@ int main() {
 	rl_on_new_line();
 	return 0;
 }
+```
 
 In this example, the program prompts the user to enter a line of text, then prints the entered line. After freeing the memory allocated by readline, rl_on_new_line is called to inform readline that the cursor is on a new line
 
@@ -113,6 +117,7 @@ The rl_replace_line function is part of the GNU Readline library, which provides
 
 Example:
 
+```c
 #include <stdio.h>
 #include <readline/readline.h>
 
@@ -123,6 +128,7 @@ int main() {
 	free(line);
 	return 0;
 }
+```
 
 In this example, the program prompts the user to enter a line of text. Then, rl_replace_line is called to replace the contents of the readline buffer with "This is a new line". The rl_redisplay function is then called to update the display.
 The memory allocated by readline is freed after it's no longer needed.
@@ -144,6 +150,7 @@ The rl_redisplay function is part of the GNU Readline library, which provides a 
 
 Example:
 
+```c
 #include <stdio.h>
 #include <readline/readline.h>
 
@@ -154,6 +161,8 @@ int main() {
 	free(line);
 	return 0;
 }
+```
+
 
 In this example, the program prompts the user to enter a line of text. Then, rl_replace_line is called to replace the contents of the readline buffer with "This is a new line". The rl_redisplay function is then called to update the display.
 The memory allocated by readline is freed after it's no longer needed.
@@ -175,6 +184,7 @@ The add_history function is part of the GNU Readline library, which provides a s
 
 Example:
 
+```c
 #include <stdio.h>
 #include <readline/readline.h>
 #include <readline/history.h>
@@ -186,6 +196,7 @@ int main() {
 	free(line);
 	return 0;
 }
+```
 
 In this example, the program prompts the user to enter a line of text. If the entered line is not empty, add_history is called to add the line to the history list. The entered line is then printed,
 and the memory allocated by readline is freed after it's no longer needed.
@@ -207,6 +218,7 @@ The access function is a standard C function that checks the file's accessibilit
 
 Example:
 
+```c
 #include <stdio.h>
 #include <unistd.h>
 
@@ -218,9 +230,11 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program checks if the file myfile.txt exists. If the file exists,
 it prints "File exists.", otherwise it prints "File doesn't exist.".
+
 
 ---------------------------------------------------------------------------------
 OPEN
@@ -238,6 +252,7 @@ The open function is a standard C function that opens a file or device.
 
 Example:
 
+```c
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -252,9 +267,11 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program attempts to open the file myfile.txt in read-only mode. If the file is opened successfully, it prints "File opened successfully." and then closes the file.
 If the file cannot be opened, it prints "Failed to open file.".
+
 
 ---------------------------------------------------------------------------------
 READ
@@ -272,6 +289,7 @@ The read function is a standard C function that reads data from a file.
 
 Example:
 
+```c
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -295,6 +313,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program attempts to open the file myfile.txt in read-only mode. If the file is opened successfully, it reads up to BUF_SIZE - 1 bytes from the file into a buffer, then prints the contents of the buffer. If the file cannot be read,
 it prints "Failed to read from file.". After reading, the file is closed.
@@ -316,6 +335,7 @@ The close function is a standard C function that closes a file descriptor.
 
 Example:
 
+```c
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -334,6 +354,8 @@ int main() {
 	}
 	return 0;
 }
+```
+
 
 In this example, the program attempts to open the file myfile.txt in read-only mode. If the file is opened successfully, it prints "File opened successfully.". Then it attempts to close the file. If the file is closed successfully, it prints "File closed successfully.".
 If the file cannot be closed, it prints "Failed to close file.".
@@ -354,6 +376,8 @@ The fork function is a standard C function that creates a new process.
 
 Example:
 
+```c
+
 #include <stdio.h>
 #include <unistd.h>
 
@@ -369,6 +393,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program creates a new process using fork. If fork fails, it prints "Failed to fork.". If fork succeeds, the parent process prints its own process ID and the child's process ID,
 and the child process prints "This is the child process.".
@@ -391,6 +416,8 @@ The wait function is a standard C function that makes a parent process wait unti
 
 Example:
 
+```c
+
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
@@ -409,6 +436,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program creates a new process using fork. If fork fails, it prints "Failed to fork.". If fork succeeds, the child process prints "This is the child process.", and the parent process waits for the child to exit
 before printing "This is the parent process, child has exited.".
@@ -431,6 +459,8 @@ The waitpid function is a standard C function that makes a parent process wait f
 
 Example:
 
+```c
+
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
@@ -449,6 +479,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program creates a new process using fork. If fork fails, it prints "Failed to fork.". If fork succeeds, the child process prints "This is the child process.", and the parent process waits for the specific child
 to exit before printing "This is the parent process, child has exited.".
@@ -471,6 +502,8 @@ The wait3 function is a standard C function that suspends the calling process un
 
 Example:
 
+```c
+
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
@@ -491,6 +524,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program creates a new process using fork. If fork fails, it prints "Failed to fork.". If fork succeeds, the child process prints "This is the child process.", and the parent process waits for a child to exit and retrieves the child's
 resource usage before printing "This is the parent process, child has exited.".
@@ -513,6 +547,8 @@ The wait4 function is a standard C function that suspends the calling process un
 
 Example:
 
+```c
+
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
@@ -533,6 +569,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program creates a new process using fork. If fork fails, it prints "Failed to fork.". If fork succeeds, the child process prints "This is the child process.", and the parent process waits for the specific child to exit and retrieves the child's
 resource usage before printing "This is the parent process, child has exited.".
@@ -555,6 +592,8 @@ The signal function is a standard C function that sets a function to handle a si
 
 Example:
 
+```c
+
 #include <stdio.h>
 #include <unistd.h>
 #include <signal.h>
@@ -571,7 +610,7 @@ int main() {
 	}
 	return 0;
 }
-
+```
 
 In this example, the program sets a function handle_sigint to handle the SIGINT signal
 (usually generated by the Ctrl+C command). If the SIGINT signal is caught, the program prints "Caught signal 2". The program runs indefinitely, printing "Running..." every second, until it receives a SIGINT signal.
@@ -593,6 +632,8 @@ The sigaction function is a standard C function that allows you to examine and c
 
 Example:
 
+```c
+
 #include <stdio.h>
 #include <unistd.h>
 #include <signal.h>
@@ -613,6 +654,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program sets a function handle_sigint to handle the SIGINT signal (usually generated by the Ctrl+C command) using sigaction. If the SIGINT signal is caught, the program prints "Caught signal 2". The program runs
 indefinitely, printing "Running..." every second, until it receives a SIGINT signal.
@@ -634,6 +676,7 @@ The sigemptyset function is a standard C function that initializes a signal set 
 
 Example:
 
+```c
 #include <stdio.h>
 #include <signal.h>
 
@@ -646,6 +689,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program initializes a signal set to be empty using sigemptyset. If sigemptyset succeeds, it prints "Signal set initialized to be empty.".
 If sigemptyset fails, it prints "Failed to initialize signal set.".
@@ -667,6 +711,7 @@ The sigaddset function is a standard C function that adds a specified signal to 
 
 Example:
 
+```c
 #include <stdio.h>
 #include <signal.h>
 
@@ -680,6 +725,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program first initializes a signal set to be empty using sigemptyset. Then it adds SIGINT to the signal set using sigaddset. If sigaddset succeeds, it prints "SIGINT added to the signal set.".
 If sigaddset fails, it prints "Failed to add SIGINT to the signal set.".
@@ -702,6 +748,7 @@ The kill function is a standard C function that sends a signal to a specific pro
 
 Example:
 
+```c
 #include <stdio.h>
 #include <signal.h>
 #include <unistd.h>
@@ -711,6 +758,7 @@ int main() {
 	kill(getpid(), SIGSTOP);
 	return 0;
 }
+```
 
 In this example, the program sends the SIGSTOP signal to itself using kill. This will cause the process to stop. Note that
 you can continue the process with the fg command if you're running it in a terminal.
@@ -733,6 +781,7 @@ The exit function is a standard C function that terminates the calling process.
 
 Example:
 
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -741,6 +790,7 @@ int main() {
 	exit(0);
 	return 0;  // This line will not be executed
 }
+```
 
 In this example, the program terminates itself using exit. The printf statement after exit will not be executed because the process has already terminated.
 The exit status of the process is 0, which usually indicates successful termination.
@@ -762,6 +812,7 @@ The getcwd function is a standard C function that gets the current working direc
 
 Example:
 
+```c
 #include <stdio.h>
 #include <unistd.h>
 
@@ -774,6 +825,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program gets the current working directory using getcwd and stores it in buf. If getcwd succeeds, it prints "Current working directory: " followed by the path.
 If getcwd fails, it prints "Failed to get current working directory.".
@@ -794,6 +846,7 @@ The chdir function is a standard C function that changes the current working dir
 
 Example:
 
+```c
 #include <stdio.h>
 #include <unistd.h>
 
@@ -805,10 +858,10 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program changes the current working directory to /tmp using chdir. If chdir succeeds, it prints "Changed the current working directory to /tmp".
 If chdir fails, it prints "Failed to change the current working directory.".
-
 
 
 ---------------------------------------------------------------------------------
@@ -827,6 +880,7 @@ The stat function is a standard C function that gets file status.
 
 Example:
 
+```c
 #include <stdio.h>
 #include <sys/stat.h>
 
@@ -839,7 +893,7 @@ int main() {
 	}
 	return 0;
 }
-
+```
 
 In this example, the program gets the status of the directory /tmp using stat and stores it in buf. If stat succeeds, it prints
 "Got the status of /tmp". If stat fails, it prints "Failed to get the status of /tmp.".
@@ -861,6 +915,7 @@ The lstat function is a standard C function that gets file status, similar to st
 
 Example:
 
+```c
 #include <stdio.h>
 #include <sys/stat.h>
 
@@ -873,10 +928,10 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program gets the status of the symbolic link /tmp/symlink using lstat and stores it in buf. If lstat succeeds, it prints "Got the status of /tmp/symlink".
 If lstat fails, it prints "Failed to get the status of /tmp/symlink.".
-
 
 
 ---------------------------------------------------------------------------------
@@ -895,6 +950,7 @@ The fstat function is a standard C function that gets the status of an open file
 
 Example:
 
+```c
 #include <stdio.h>
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -914,10 +970,10 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program opens the file /tmp/file and gets its status using fstat, storing the result in buf. If fstat succeeds, it prints "Got the status of /tmp/file". If fstat fails, it prints "Failed to get the status of /tmp/file.".
 If the file fails to open, it prints "Failed to open /tmp/file.".
-
 
 
 ---------------------------------------------------------------------------------
@@ -936,6 +992,7 @@ The unlink function is a standard C function that removes a specified file.
 
 Example:
 
+```c
 #include <stdio.h>
 #include <unistd.h>
 
@@ -947,7 +1004,7 @@ int main() {
 	}
 	return 0;
 }
-
+```
 
 In this example, the program removes the file /tmp/file using unlink.
 If unlink succeeds, it prints "Removed /tmp/file". If unlink fails, it prints "Failed to remove /tmp/file.".
@@ -969,6 +1026,7 @@ The execve function is a standard C function that replaces the current process i
 
 Example:
 
+```c
 #include <stdio.h>
 #include <unistd.h>
 
@@ -980,10 +1038,10 @@ int main() {
 	}
 	return 0;  // This line will not be executed if execve succeeds
 }
+```
 
 In this example, the program replaces its own process image with the /bin/ls program using execve. If execve fails, it prints "Failed to execute /bin/ls.".
 If execve succeeds, the rest of the program will not be executed because the process image has been replaced.
-
 
 
 ---------------------------------------------------------------------------------
@@ -1002,6 +1060,7 @@ The dup function is a standard C function that creates a copy of the file descri
 
 Example:
 
+```c
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -1021,6 +1080,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program opens the file /tmp/file and duplicates its file descriptor using dup, storing the new file descriptor in newfd. If dup succeeds, it prints "Duplicated file descriptor: " followed by the new file descriptor.
 If dup fails, it prints "Failed to duplicate file descriptor.". If the file fails to open, it prints "Failed to open /tmp/file.".
@@ -1042,6 +1102,7 @@ The dup2 function is a standard C function that duplicates a file descriptor to 
 
 Example:
 
+```c
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -1061,7 +1122,7 @@ int main() {
 	}
 	return 0;
 }
-
+```
 
 In this example, the program opens the file /tmp/file and duplicates its file descriptor to descriptor 10 using dup2, storing the new file descriptor in newfd. If dup2 succeeds, it prints "Duplicated file descriptor to: " followed by the new file descriptor. If dup2 fails, it prints "Failed to duplicate file descriptor.".
 If the file fails to open, it prints "Failed to open /tmp/file.".
@@ -1083,6 +1144,7 @@ The pipe function is a standard C function that creates a pipe, which is a unidi
 
 Example:
 
+```c
 #include <stdio.h>
 #include <unistd.h>
 
@@ -1095,11 +1157,10 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program creates a pipe using pipe and stores the file descriptors in pipefd. If pipe succeeds, it prints "Created a pipe. Read fd: ", followed by the read file descriptor, ", Write fd: ",
 followed by the write file descriptor. If pipe fails, it prints "Failed to create a pipe.".
-
-
 
 
 ---------------------------------------------------------------------------------
@@ -1118,6 +1179,7 @@ The opendir function is a standard C function that opens a directory stream corr
 
 Example:
 
+```c
 #include <stdio.h>
 #include <dirent.h>
 
@@ -1131,10 +1193,10 @@ int main() {
 	closedir(dir);
 	return 0;
 }
+```
 
 In this example, the program opens the directory /tmp using opendir and stores the directory stream in dir. If opendir succeeds, it prints "Opened the directory /tmp". If opendir fails, it prints "Failed to open the directory /tmp.".
 After it's done with the directory, it closes the directory stream using closedir.
-
 
 
 ---------------------------------------------------------------------------------
@@ -1153,6 +1215,7 @@ The readdir function is a standard C function that reads the next directory entr
 
 Example:
 
+```c
 #include <stdio.h>
 #include <dirent.h>
 
@@ -1169,9 +1232,11 @@ int main() {
 	closedir(dir);
 	return 0;
 }
+```
 
 In this example, the program opens the directory /tmp using opendir and reads all directory entries using readdir, printing each one. If opendir fails, it prints "Failed to open the directory /tmp.".
 After it's done with the directory, it closes the directory stream using closedir.
+
 
 ---------------------------------------------------------------------------------
 CLOSEDIR
@@ -1189,6 +1254,7 @@ The closedir function is a standard C function that closes a directory stream.
 
 Example:
 
+```c
 #include <stdio.h>
 #include <dirent.h>
 
@@ -1209,11 +1275,10 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program opens the directory /tmp using opendir, reads all directory entries using readdir, and then closes the directory using closedir. If closedir succeeds, it prints "Closed the directory /tmp". If closedir fails, it prints "Failed to close the directory /tmp.".
 If opendir fails, it prints "Failed to open the directory /tmp.".
-
-
 
 
 ---------------------------------------------------------------------------------
@@ -1232,6 +1297,7 @@ The strerror function is a standard C function that returns a string describing 
 
 Example:
 
+```c
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
@@ -1243,9 +1309,11 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program tries to open a non-existent file. When the fopen call fails,
 it prints the error message associated with the current errno value using strerror.
+
 
 ---------------------------------------------------------------------------------
 PERROR
@@ -1263,6 +1331,7 @@ The perror function is a standard C function that prints a descriptive error mes
 
 Example:
 
+```c
 #include <stdio.h>
 
 int main() {
@@ -1272,6 +1341,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program tries to open a non-existent file. When the fopen call fails, it prints the error message associated with the current errno value using perror.
 The output will be something like "Error opening file: No such file or directory".
@@ -1293,6 +1363,7 @@ The isatty function is a standard C function that checks if a file descriptor re
 
 Example:
 
+```c
 #include <stdio.h>
 #include <unistd.h>
 
@@ -1304,11 +1375,10 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program checks if the standard output (STDOUT) is a terminal using isatty. If isatty returns 1, it prints "STDOUT is a terminal.".
 If isatty returns 0, it prints "STDOUT is not a terminal.".
-
-
 
 
 ---------------------------------------------------------------------------------
@@ -1327,6 +1397,7 @@ The ttyname function is a standard C function that returns a pointer to a string
 
 Example:
 
+```c
 #include <stdio.h>
 #include <unistd.h>
 
@@ -1339,6 +1410,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program gets the name of the terminal associated with the standard output (STDOUT) using ttyname. If ttyname returns a name, it prints "Terminal name: " followed by the name.
 If ttyname returns NULL, it prints "STDOUT is not a terminal.".
@@ -1360,6 +1432,7 @@ The ttyslot function is a standard C function that returns the index of the curr
 
 Example:
 
+```c
 #include <stdio.h>
 #include <unistd.h>
 
@@ -1372,6 +1445,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program gets the terminal slot in the utmp file using ttyslot. If ttyslot returns a slot greater than 0, it prints "The terminal slot in the utmp file: " followed by the slot number. If ttyslot returns 0,
 it prints "The process is not attached to a terminal, or an error occurred.".
@@ -1393,6 +1467,7 @@ The ioctl function is a standard C function that provides a generic interface fo
 
 Example:
 
+```c
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
@@ -1406,6 +1481,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program gets the size of the terminal using ioctl with the TIOCGWINSZ request. If ioctl succeeds, it prints "Terminal size: " followed by the number of rows and columns.
 If ioctl fails, it prints an error message using perror.
@@ -1427,6 +1503,7 @@ The getenv function is a standard C function that retrieves the value of an envi
 
 Example:
 
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -1439,6 +1516,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program gets the value of the "PATH" environment variable using getenv. If getenv returns a value, it prints "PATH: " followed by the value.
 If getenv returns NULL, it prints "PATH environment variable not found.".
@@ -1460,6 +1538,7 @@ The tcsetattr function is a standard C function that sets the parameters associa
 
 Example:
 
+```c
 #include <stdio.h>
 #include <termios.h>
 #include <unistd.h>
@@ -1476,6 +1555,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program first gets the current terminal parameters using tcgetattr. Then it modifies the parameters to disable echoing of input characters. Finally, it sets the new terminal parameters using tcsetattr. If tcsetattr fails, it prints an error message using perror.
 If tcgetattr fails, it also prints an error message using perror.
@@ -1497,6 +1577,7 @@ The tcgetattr function is a standard C function that gets the parameters associa
 
 Example:
 
+```c
 #include <stdio.h>
 #include <termios.h>
 #include <unistd.h>
@@ -1510,6 +1591,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program gets the current terminal parameters using tcgetattr and stores them in a termios structure. If tcgetattr succeeds, it prints "Got terminal attributes successfully.".
 If tcgetattr fails, it prints an error message using perror.
@@ -1531,6 +1613,7 @@ The tgetflag function is a part of the termcap library in Unix-like operating sy
 
 Example:
 
+```c
 #include <stdio.h>
 #include <termcap.h>
 
@@ -1548,10 +1631,10 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program gets the termcap entry for the terminal type specified by the "TERM" environment variable using tgetent. If tgetent returns a value greater than 0, it checks if the terminal has the "am" (automatic margins) capability using tgetflag. If tgetflag returns 1, it prints "The terminal has automatic margins.". If tgetflag returns 0, it prints "The terminal does not have automatic margins.". If tgetent returns a value less than or equal to 0,
 it prints "Failed to load termcap entry for " followed by the terminal type.
-
 
 
 ---------------------------------------------------------------------------------
@@ -1570,6 +1653,7 @@ The tgetflag function is a part of the termcap library in Unix-like operating sy
 
 Example:
 
+```c
 #include <stdio.h>
 #include <termcap.h>
 
@@ -1587,10 +1671,10 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program gets the termcap entry for the terminal type specified by the "TERM" environment variable using tgetent. If tgetent returns a value greater than 0, it checks if the terminal has the "am" (automatic margins) capability using tgetflag. If tgetflag returns 1, it prints "The terminal has automatic margins.". If tgetflag returns 0, it prints "The terminal does not have automatic margins.". If tgetent returns a value less than or equal to 0,
 it prints "Failed to load termcap entry for " followed by the terminal type.
-
 
 
 ---------------------------------------------------------------------------------
@@ -1609,6 +1693,7 @@ The tgetnum function is a part of the termcap library in Unix-like operating sys
 
 Example:
 
+```c
 #include <stdio.h>
 #include <termcap.h>
 
@@ -1627,6 +1712,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program gets the termcap entry for the terminal type specified by the "TERM" environment variable using tgetent. If tgetent returns a value greater than 0, it retrieves the number of columns ("co") using tgetnum. If tgetnum returns a value greater than or equal to 0, it prints "The terminal has " followed by the number of columns. If tgetnum returns a value less than 0,
 it prints "The number of columns is not defined for this terminal.". If tgetent returns a value less than or equal to 0, it prints "Failed to load termcap entry for " followed by the terminal type.
@@ -1648,6 +1734,7 @@ The tgetstr function is a part of the termcap library in Unix-like operating sys
 
 Example:
 
+```c
 #include <stdio.h>
 #include <termcap.h>
 
@@ -1668,7 +1755,7 @@ int main() {
 	}
 	return 0;
 }
-
+```
 
 In this example, the program gets the termcap entry for the terminal type specified by the "TERM" environment variable using tgetent. If tgetent returns a value greater than 0, it retrieves the clear-to-end-of-line ("ce") sequence using tgetstr. If tgetstr returns a non-null pointer, it prints "The clear-to-end-of-line sequence is: " followed by the sequence. If tgetstr returns a null pointer, it prints "The clear-to-end-of-line sequence is not defined for this terminal.". If tgetent returns a value less than or equal to 0,
 it prints "Failed to load termcap entry for " followed by the terminal type.
@@ -1690,6 +1777,7 @@ The tgoto function is a part of the termcap library in Unix-like operating syste
 
 Example:
 
+```c
 #include <stdio.h>
 #include <termcap.h>
 
@@ -1711,6 +1799,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program gets the termcap entry for the terminal type specified by the "TERM" environment variable using tgetent.
 If tgetent returns a value greater than 0, it retrieves the cursor move ("cm") sequence using tgetstr.
@@ -1733,6 +1822,7 @@ The tputs function is a part of the termcap library in Unix-like operating syste
 
 Example:
 
+```c
 #include <stdio.h>
 #include <termcap.h>
 
@@ -1758,6 +1848,7 @@ int main() {
 	}
 	return 0;
 }
+```
 
 In this example, the program gets the termcap entry for the terminal type specified by the "TERM" environment variable using tgetent. If tgetent returns a value greater than 0, it retrieves the cursor move ("cm") sequence using tgetstr.
 If tgetstr returns a non-null pointer, it formats the sequence to move the cursor to the position (10, 20) using tgoto and outputs it to the terminal using tputs. If tgetstr returns a null pointer, it prints "The cursor move sequence is not defined for this terminal.". If tgetent returns a value less than or equal to 0,
