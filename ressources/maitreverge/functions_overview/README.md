@@ -73,7 +73,7 @@ Dive in to explore more about each function!
 <hr>
 
 
-# READLINE
+## READLINE
 
 
 The `readline` function is not a standard C function, but it's part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
@@ -107,7 +107,7 @@ int main() {
 
 ---------------------------------------------------------------------------------
 
-# RL_CLEAR_HISTORY
+## RL_CLEAR_HISTORY
 
 
 The `rl_clear_history` function is part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
@@ -148,7 +148,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# RL_ON_NEW_LINE
+## RL_ON_NEW_LINE
 
 The `rl_on_new_line` function is part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
 
@@ -182,7 +182,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# RL_REPLACE_LINE
+## RL_REPLACE_LINE
 
 The `rl_replace_line` function is part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
 
@@ -217,7 +217,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# RL_REDISPLAY
+## RL_REDISPLAY
 
 The `rl_redisplay` function is part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
 
@@ -253,7 +253,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# ADD_HISTORY
+## ADD_HISTORY
 
 The `add_history` function is part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
 
@@ -288,7 +288,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# PRINTF
+## PRINTF
 
 The `printf` function is a standard C function, part of the stdio library, which provides formatted output conversion i.e., it converts the output in a specified format.
 
@@ -319,7 +319,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# MALLOC
+## MALLOC
 
 The `malloc` function is a standard C function, part of the `stdlib` library, which dynamically allocates memory at runtime.
 
@@ -359,7 +359,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# FREE
+## FREE
 
 The `free` function is a standard C function, part of the `stdlib` library, which deallocates memory that was previously allocated by `malloc`, `calloc`, `realloc` or `aligned_alloc`.
 
@@ -401,7 +401,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# WRITE
+## WRITE
 
 The `write` function is a Unix system call that outputs data from a buffer to a file descriptor.
 
@@ -432,7 +432,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# ACCESS
+## ACCESS
 
 The `access` function is a standard C function that checks the file's accessibility.
 
@@ -467,7 +467,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# OPEN
+## OPEN
 
 The `open` function is a standard C function that opens a file or device.
 
@@ -506,7 +506,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# READ
+## READ
 
 The `read` function is a standard C function that reads data from a file.
 
@@ -554,7 +554,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# CLOSE
+## CLOSE
 
 The `close` function is a standard C function that closes a file descriptor.
 
@@ -598,7 +598,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# FORK
+## FORK
 
 The `fork` function is a standard C function that creates a new process.
 
@@ -638,7 +638,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# WAIT
+## WAIT
 
 The `wait` function is a standard C function that makes a parent process wait until one of its child processes exits.
 
@@ -682,7 +682,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# WAITPID
+## WAITPID
 
 The `waitpid` function is a standard C function that makes a parent process wait for a specific child process to exit.
 
@@ -726,7 +726,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# WAIT3
+## WAIT3
 
 The `wait3` function is a standard C function that suspends the calling process until one of its child processes terminates.
 
@@ -772,7 +772,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# WAIT4
+## WAIT4
 
 The `wait4` function is a standard C function that suspends the calling process until a specific child process terminates.
 
@@ -818,7 +818,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# SIGNAL
+## SIGNAL
 
 The `signal` function is a standard C function that sets a function to handle a signal.
 
@@ -860,7 +860,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# SIGACTION
+## SIGACTION
 
 The `sigaction` function is a standard C function that allows you to examine and change a signal action.
 
@@ -906,7 +906,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# SIGEMPTYSET
+## SIGEMPTYSET
 
 The `sigemptyset` function is a standard C function that initializes a signal set to be empty.
 
@@ -943,7 +943,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# SIGADDSET
+## SIGADDSET
 
 The `sigaddset` function is a standard C function that adds a specified signal to a signal set.
 
@@ -981,7 +981,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# KILL
+## KILL
 
 The `kill` function is a standard C function that sends a signal to a specific process or a group of processes.
 
@@ -1014,7 +1014,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# EXIT
+## EXIT
 
 The `exit` function is a standard C function that terminates the calling process.
 
@@ -1047,7 +1047,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# GETCWD
+## GETCWD
 
 The `getcwd` function is a standard C function that gets the current working directory of the process.
 
@@ -1084,7 +1084,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# CHDIR
+## CHDIR
 
 The `chdir` function is a standard C function that changes the current working directory of the process.
 
@@ -1120,7 +1120,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# STAT
+## STAT
 
 The `stat` function is a standard C function that gets file status.
 
@@ -1157,7 +1157,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# LSTAT
+## LSTAT
 
 The `lstat` function is a standard C function that gets file status, similar to `stat`, but if the file is a symbolic link, `lstat` returns information about the link itself, not the file it refers to.
 
@@ -1194,7 +1194,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# FSTAT
+## FSTAT
 
 The `fstat` function is a standard C function that gets the status of an open file.
 
@@ -1238,7 +1238,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# UNLINK
+## UNLINK
 
 The `unlink` function is a standard C function that removes a specified file.
 
@@ -1274,7 +1274,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# EXECVE
+## EXECVE
 
 The `execve` function is a standard C function that replaces the current process image with a new process image.
 
@@ -1310,7 +1310,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# DUP
+## DUP
 
 The `dup` function is a standard C function that creates a copy of the file descriptor.
 
@@ -1354,7 +1354,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# DUP2
+## DUP2
 
 The `dup2` function is a standard C function that duplicates a file descriptor to a specified file descriptor.
 
@@ -1398,7 +1398,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# PIPE
+## PIPE
 
 The `pipe` function is a standard C function that creates a pipe, which is a unidirectional data channel that can be used for interprocess communication.
 
@@ -1435,7 +1435,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# OPENDIR
+## OPENDIR
 
 The `opendir` function is a standard C function that opens a directory stream corresponding to the directory name, and returns a pointer to the directory stream. The stream is positioned at the first entry in the directory.
 
@@ -1473,7 +1473,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# READDIR
+## READDIR
 
 The `readdir` function is a standard C function that reads the next directory entry from the directory stream dir.
 
@@ -1514,7 +1514,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# CLOSEDIR
+## CLOSEDIR
 
 The `closedir` function is a standard C function that closes a directory stream.
 
@@ -1559,7 +1559,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# STRERROR
+## STRERROR
 
 The `strerror` function is a standard C function that returns a string describing the error code passed in the argument errno.
 
@@ -1594,7 +1594,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# PERROR
+## PERROR
 
 The `perror` function is a standard C function that prints a descriptive error message to `stderr`.
 
@@ -1628,7 +1628,7 @@ int main() {
 [Back to Summary](#summary)
 
 --------------------------------------------------------------------------------
-# ISATTY
+## ISATTY
 
 The `isatty` function is a standard C function that checks if a file descriptor refers to a terminal.
 
@@ -1664,7 +1664,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# TTYNAME
+## TTYNAME
 
 The `ttyname` function is a standard C function that returns a pointer to a string which describes the terminal device that is open on the file descriptor fd.
 
@@ -1701,7 +1701,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# TTYSLOT
+## TTYSLOT
 
 The `ttyslot` function is a standard C function that returns the index of the current user's terminal in the system's utmp file (a record of all logins and logouts).
 
@@ -1738,7 +1738,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# IOCTL
+## IOCTL
 
 The `ioctl` function is a standard C function that provides a generic interface for various `I/O` operations.
 
@@ -1776,7 +1776,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# GETENV
+## GETENV
 
 The `getenv` function is a standard C function that retrieves the value of an environment variable.
 
@@ -1813,7 +1813,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# TCSETATTR
+## TCSETATTR
 
 The `tcsetattr` function is a standard C function that sets the parameters associated with the terminal.
 
@@ -1854,7 +1854,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# TCGETATTR
+## TCGETATTR
 
 The `tcgetattr` function is a standard C function that gets the parameters associated with the terminal.
 
@@ -1892,7 +1892,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# TGETENT
+## TGETENT
 
 The `tgetflag` function is a part of the `termcap library` in Unix-like operating systems that checks for the existence of a boolean capability in the `termcap` entry.
 
@@ -1934,7 +1934,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# TGETFLAG
+## TGETFLAG
 
 The `tgetflag` function is a part of the `termcap library` in Unix-like operating systems that checks for the existence of a boolean capability in the `termcap` entry.
 
@@ -1977,7 +1977,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# TGETNUM
+## TGETNUM
 
 The `tgetnum` function is a part of the termcap library in Unix-like operating systems that retrieves the numeric value of a capability from the `termcap` entry.
 
@@ -2021,7 +2021,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# TGETSTR
+## TGETSTR
 
 The `tgetstr` function is a part of the termcap library in Unix-like operating systems that retrieves the string value of a capability from the `termcap` entry.
 
@@ -2069,7 +2069,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# TGOTO
+## TGOTO
 
 The `tgoto` function is a part of the termcap library in Unix-like operating systems that formats a cursor addressing string.
 
@@ -2118,7 +2118,7 @@ int main() {
 [Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
-# TPUTS
+## TPUTS
 
 The `tputs` function is a part of the termcap library in Unix-like operating systems that outputs a `termcap` string to the terminal.
 
