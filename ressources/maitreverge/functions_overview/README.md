@@ -1,4 +1,4 @@
-# Minishell Project Function Overview
+# MINISHELL PROJECT FUNCTION OVERVIEW
 
 **Welcome to the `Minishell` project function overview.**
 
