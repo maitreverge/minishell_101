@@ -63,7 +63,6 @@
 
 # READLINE
 
-[Back to Summary](#summary)
 
 The readline function is not a standard C function, but it's part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
 
@@ -91,6 +90,8 @@ int main() {
 ```
 
 *In this example, the program prompts the user to enter a line of text, then prints the entered line. The memory allocated by readline is freed after it's no longer needed.*
+
+[Back to Summary](#summary)
 
 ---------------------------------------------------------------------------------
 
@@ -132,6 +133,7 @@ In this example, the program prompts the user to enter lines of text until an EO
 After the loop, rl_clear_history is called to clear the history list.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # RL_ON_NEW_LINE
 
@@ -164,6 +166,7 @@ int main() {
 In this example, the program prompts the user to enter a line of text, then prints the entered line. After freeing the memory allocated by readline, rl_on_new_line is called to inform readline that the cursor is on a new line
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # RL_REPLACE_LINE
 
@@ -197,6 +200,7 @@ In this example, the program prompts the user to enter a line of text. Then, rl_
 The memory allocated by readline is freed after it's no longer needed.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # RL_REDISPLAY
 
@@ -231,6 +235,7 @@ In this example, the program prompts the user to enter a line of text. Then, rl_
 The memory allocated by readline is freed after it's no longer needed.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # ADD_HISTORY
 
@@ -265,6 +270,7 @@ In this example, the program prompts the user to enter a line of text. If the en
 and the memory allocated by readline is freed after it's no longer needed.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # ACCESS
 
@@ -299,6 +305,7 @@ In this example, the program checks if the file myfile.txt exists. If the file e
 it prints "File exists.", otherwise it prints "File doesn't exist.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # OPEN
 
@@ -336,6 +343,7 @@ In this example, the program attempts to open the file myfile.txt in read-only m
 If the file cannot be opened, it prints "Failed to open file.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # READ
 
@@ -382,6 +390,7 @@ In this example, the program attempts to open the file myfile.txt in read-only m
 it prints "Failed to read from file.". After reading, the file is closed.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # CLOSE
 
@@ -423,6 +432,7 @@ int main() {
 In this example, the program attempts to open the file myfile.txt in read-only mode. If the file is opened successfully, it prints "File opened successfully.". Then it attempts to close the file. If the file is closed successfully, it prints "File closed successfully.".
 If the file cannot be closed, it prints "Failed to close file.".
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # FORK
 
@@ -462,7 +472,7 @@ In this example, the program creates a new process using fork. If fork fails, it
 and the child process prints "This is the child process.".
 
 
-
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # WAIT
 
@@ -505,6 +515,7 @@ In this example, the program creates a new process using fork. If fork fails, it
 before printing "This is the parent process, child has exited.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # WAITPID
 
@@ -547,7 +558,7 @@ In this example, the program creates a new process using fork. If fork fails, it
 to exit before printing "This is the parent process, child has exited.".
 
 
-
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # WAIT3
 
@@ -592,7 +603,7 @@ In this example, the program creates a new process using fork. If fork fails, it
 resource usage before printing "This is the parent process, child has exited.".
 
 
-
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # WAIT4
 
@@ -637,7 +648,7 @@ In this example, the program creates a new process using fork. If fork fails, it
 resource usage before printing "This is the parent process, child has exited.".
 
 
-
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # SIGNAL
 
@@ -678,6 +689,7 @@ In this example, the program sets a function handle_sigint to handle the SIGINT 
 (usually generated by the Ctrl+C command). If the SIGINT signal is caught, the program prints "Caught signal 2". The program runs indefinitely, printing "Running..." every second, until it receives a SIGINT signal.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # SIGACTION
 
@@ -722,6 +734,7 @@ In this example, the program sets a function handle_sigint to handle the SIGINT 
 indefinitely, printing "Running..." every second, until it receives a SIGINT signal.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # SIGEMPTYSET
 
@@ -757,6 +770,7 @@ In this example, the program initializes a signal set to be empty using sigempty
 If sigemptyset fails, it prints "Failed to initialize signal set.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # SIGADDSET
 
@@ -793,7 +807,7 @@ In this example, the program first initializes a signal set to be empty using si
 If sigaddset fails, it prints "Failed to add SIGINT to the signal set.".
 
 
-
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # KILL
 
@@ -826,7 +840,7 @@ In this example, the program sends the SIGSTOP signal to itself using kill. This
 you can continue the process with the fg command if you're running it in a terminal.
 
 
-
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # EXIT
 
@@ -858,6 +872,7 @@ In this example, the program terminates itself using exit. The printf statement 
 The exit status of the process is 0, which usually indicates successful termination.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # GETCWD
 
@@ -892,6 +907,8 @@ int main() {
 In this example, the program gets the current working directory using getcwd and stores it in buf. If getcwd succeeds, it prints "Current working directory: " followed by the path.
 If getcwd fails, it prints "Failed to get current working directory.".
 
+
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # CHDIR
 
@@ -926,6 +943,7 @@ In this example, the program changes the current working directory to /tmp using
 If chdir fails, it prints "Failed to change the current working directory.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # STAT
 
@@ -961,6 +979,7 @@ In this example, the program gets the status of the directory /tmp using stat an
 "Got the status of /tmp". If stat fails, it prints "Failed to get the status of /tmp.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # LSTAT
 
@@ -996,6 +1015,7 @@ In this example, the program gets the status of the symbolic link /tmp/symlink u
 If lstat fails, it prints "Failed to get the status of /tmp/symlink.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # FSTAT
 
@@ -1038,6 +1058,7 @@ In this example, the program opens the file /tmp/file and gets its status using 
 If the file fails to open, it prints "Failed to open /tmp/file.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # UNLINK
 
@@ -1072,6 +1093,7 @@ In this example, the program removes the file /tmp/file using unlink.
 If unlink succeeds, it prints "Removed /tmp/file". If unlink fails, it prints "Failed to remove /tmp/file.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # EXECVE
 
@@ -1106,6 +1128,7 @@ In this example, the program replaces its own process image with the /bin/ls pro
 If execve succeeds, the rest of the program will not be executed because the process image has been replaced.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # DUP
 
@@ -1148,6 +1171,7 @@ In this example, the program opens the file /tmp/file and duplicates its file de
 If dup fails, it prints "Failed to duplicate file descriptor.". If the file fails to open, it prints "Failed to open /tmp/file.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # DUP2
 
@@ -1190,6 +1214,7 @@ In this example, the program opens the file /tmp/file and duplicates its file de
 If the file fails to open, it prints "Failed to open /tmp/file.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # PIPE
 
@@ -1225,6 +1250,7 @@ In this example, the program creates a pipe using pipe and stores the file descr
 followed by the write file descriptor. If pipe fails, it prints "Failed to create a pipe.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # OPENDIR
 
@@ -1261,6 +1287,7 @@ In this example, the program opens the directory /tmp using opendir and stores t
 After it's done with the directory, it closes the directory stream using closedir.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # READDIR
 
@@ -1300,6 +1327,7 @@ In this example, the program opens the directory /tmp using opendir and reads al
 After it's done with the directory, it closes the directory stream using closedir.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # CLOSEDIR
 
@@ -1343,6 +1371,7 @@ In this example, the program opens the directory /tmp using opendir, reads all d
 If opendir fails, it prints "Failed to open the directory /tmp.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # STRERROR
 
@@ -1377,6 +1406,7 @@ In this example, the program tries to open a non-existent file. When the fopen c
 it prints the error message associated with the current errno value using strerror.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # PERROR
 
@@ -1409,6 +1439,7 @@ In this example, the program tries to open a non-existent file. When the fopen c
 The output will be something like "Error opening file: No such file or directory".
 
 
+[Back to Summary](#summary)
 --------------------------------------------------------------------------------
 # ISATTY
 
@@ -1443,6 +1474,7 @@ In this example, the program checks if the standard output (STDOUT) is a termina
 If isatty returns 0, it prints "STDOUT is not a terminal.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # TTYNAME
 
@@ -1478,6 +1510,7 @@ In this example, the program gets the name of the terminal associated with the s
 If ttyname returns NULL, it prints "STDOUT is not a terminal.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # TTYSLOT
 
@@ -1513,6 +1546,7 @@ In this example, the program gets the terminal slot in the utmp file using ttysl
 it prints "The process is not attached to a terminal, or an error occurred.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # IOCTL
 
@@ -1549,6 +1583,7 @@ In this example, the program gets the size of the terminal using ioctl with the 
 If ioctl fails, it prints an error message using perror.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # GETENV
 
@@ -1584,6 +1619,7 @@ In this example, the program gets the value of the "PATH" environment variable u
 If getenv returns NULL, it prints "PATH environment variable not found.".
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # TCSETATTR
 
@@ -1623,6 +1659,7 @@ In this example, the program first gets the current terminal parameters using tc
 If tcgetattr fails, it also prints an error message using perror.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # TCGETATTR
 
@@ -1659,6 +1696,7 @@ In this example, the program gets the current terminal parameters using tcgetatt
 If tcgetattr fails, it prints an error message using perror.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # TGETENT
 
@@ -1699,6 +1737,7 @@ In this example, the program gets the termcap entry for the terminal type specif
 it prints "Failed to load termcap entry for " followed by the terminal type.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # TGETFLAG
 
@@ -1739,6 +1778,7 @@ In this example, the program gets the termcap entry for the terminal type specif
 it prints "Failed to load termcap entry for " followed by the terminal type.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # TGETNUM
 
@@ -1780,6 +1820,7 @@ In this example, the program gets the termcap entry for the terminal type specif
 it prints "The number of columns is not defined for this terminal.". If tgetent returns a value less than or equal to 0, it prints "Failed to load termcap entry for " followed by the terminal type.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # TGETSTR
 
@@ -1823,6 +1864,7 @@ In this example, the program gets the termcap entry for the terminal type specif
 it prints "Failed to load termcap entry for " followed by the terminal type.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # TGOTO
 
@@ -1868,6 +1910,7 @@ If tgetent returns a value greater than 0, it retrieves the cursor move ("cm") s
 If tgetstr returns a non-null pointer, it formats the sequence to move the cursor to the position (10, 20) using tgoto and prints "The sequence to move the cursor to (10, 20) is: " followed by the sequence. If tgetstr returns a null pointer, it prints "The cursor move sequence is not defined for this terminal.". If tgetent returns a value less than or equal to 0, it prints "Failed to load termcap entry for " followed by the terminal type.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
 # TPUTS
 
@@ -1917,4 +1960,5 @@ If tgetstr returns a non-null pointer, it formats the sequence to move the curso
 it prints "Failed to load termcap entry for " followed by the terminal type.
 
 
+[Back to Summary](#summary)
 ---------------------------------------------------------------------------------
