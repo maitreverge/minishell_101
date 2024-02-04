@@ -4,7 +4,11 @@
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-[**REPO SUMMARY**](https://github.com/maitreverge/minishell_101/tree/fa7aa41f274a86e0df12822a12d2d8b54bafdb89/sommaire)
+<p align="center">
+
+## [**REPO SUMMARY**](https://github.com/maitreverge/minishell_101/tree/fa7aa41f274a86e0df12822a12d2d8b54bafdb89/sommaire)
+
+</p>
 
 
 
