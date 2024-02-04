@@ -2,9 +2,13 @@
   <img src="img/minishell_101.png" width="70%"/>
 </p>
 
-## 🚀 WHAT IS MINISHELL ??
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-This repo aims to centralize all kinds of ressources for getting a better understanding of 42 project called `minishell`.
+[**REPO SUMMARY**](https://github.com/maitreverge/minishell_101/tree/fa7aa41f274a86e0df12822a12d2d8b54bafdb89/sommaire)
+
+
+
+## 🚀 WHAT IS MINISHELL ?
 
 The `minihell` project at 42 immerses students in UNIX shell development using C, focusing on system calls, process management, and parsing.
 
@@ -12,61 +16,62 @@ It challenges them to create a minimalistic shell with fundamental UNIX command-
 
 ## 🤔 WHAT'S THE POINT OF THIS REPO ?
 
-This repo primarelly aims to
-
-## 🤝 CONTRIBUTION
-
-Contributions from 42 students is the core of this repo.
-
-What's this repo ?
-
 The creation of this GitHub repo was the result of a reflection among 42 students during our minishell project: far too many of us (myself included) are unfamiliar with Github collaboration tools, and we all lack training in them.
 
 So I created this repo with two main goals in mind:
 
-- Centralize and organize resources of all kinds (shell scripts and other languages, explanatory README.md files, stackoverflow web resources) to give an overview of the minishell project.
+- **Centralize** and **organize** resources of all kinds (*shell scripts and other languages, explanatory README.md files, stackoverflow web resources*) to give an `minishell` project overview for future students.
 
-- Be a training ground for GitHub collaboration tools (pull request creation, Git Issues, .md file redactions).
+- Be a common **training ground** for GitHub collaboration tools (*Pull Request creation, Git Issues, .md file redactions*).
 
-Miniwhat ?
+## 🤝 WHAT CAN I SHARE /  HOW DO I CONTRIBUTE ?
 
-<minishell description
+You're going to create a 😱**PULL REQUEST**😱.
+I know I know, this is scary... you can do it !
 
-Cool cool, what now ?
+[**Unfamiliar with pull requests ? Click Here !**](https://googlethatforyou.com/?q=how%20to%20make%20a%20github%20pull%20request)
 
-Did you create a custom Python Script for checking a minishell specific requirement ?
+- Did you create a custom Python Script for checking a minishell specific requirement ?
 
-Or maybe a useful readme.md where you explain useful infos?
+- You wrote a useful readme.md where you explain useful infos?
 
-<The contents>
+- You found a usefull ressource about bash ?
+
+Open a Pull Request, and **don't be afraid to mess things up** !
 
 
+For keeping everything nice and intelligible, here is the global structure of the repo :
 
-DISCLAIMER: 
 
-This collaborative repo between 42 students aims to centralize only resources related to minishell, its understanding, as well as resources of related notions.
+<p align="center">
+  <img src="img/structure.png" width="40%"/>
+</p>
 
-This repo in no way replaces your personal research, nor should it replace your personal work.
+⚠️**I'd expect two things from you** ⚠️ :
 
-Finally, this repo is not a source code repo for Minishell.
+- Add a directory with your GitHub username in the [**ressources directoy**](https://github.com/maitreverge/minishell_101/tree/fa7aa41f274a86e0df12822a12d2d8b54bafdb89/ressources).
+Try to make your work as explicit and comprehensible as possible (*with a README.md for example*)
 
-<contribution>
+- Link your work in the [**summary README.md**](https://github.com/maitreverge/minishell_101/blob/fa7aa41f274a86e0df12822a12d2d8b54bafdb89/sommaire/README.md)
+(*fell free to add a category within this file if your work doesn't match any*)
 
-Contributing to your work couldn't be easier: 
+From here, you are absolutely free to organize your files as you wish !
 
-Create a pull request.
 
-Please add your contribution to the summary in this format: 
+## 🚨 DISCLAIMER: 
 
-`example code`
+This repository is a collaborative effort aimed at centralizing resources for the 42 project, Minishell. We encourage and appreciate your contributions via pull requests; however, it is crucial to note the following:
 
-With a brief description of your contribution
+  1. **Content Responsibility**: Contributors are solely responsible for the content they submit in their pull requests. Make sure your contributions are accurate, relevant, and adhere to the project's guidelines.
 
-Please add your work to a folder containing : 
-Your github username
-This will contain a README.md file describing in detail your contribution, how to make it work, and the prerequisites for your scripts!
+  2. **Intellegibility**: Maintain a high level of intelligibility in your code and documentation. Clear and concise contributions not only benefit you but also enhance the overall quality of the repository.
 
-Remember that
+  3. **Authorship Accountability**: The maintainers cannot be held responsible for the content provided by contributors. Each contributor is accountable for their work, and disputes or issues arising from contributed content should be resolved directly with the author.
 
-> [!WARNING]
-> 🚨 This README **will definitely** be missing some information/details, because I'm only taking what _I think_ is enough for me. If you're using this documentation to build your Makefile and something just does not work as expected, please refer to the corresponding section in the [GNU documentation](https://www.gnu.org/software/make/manual/make.html). 🚨
+By submitting a pull request, you acknowledge and accept these terms. Thank you for your cooperation in maintaining the quality and integrity of this collaborative repository 😊
+
+
+> [!IMPORTANT]
+> 🚨 This repo will not tolerate any pull request with the `minishell` subject, nor others 42 subjects or any official documentation from your 42 campus or the 42 Network.🚨
+
+🚀 Happy coding!
