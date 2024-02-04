@@ -1,3 +1,4 @@
+<a id="summary"></a>
 <hr>
 <details><summary>**Table of Contents**</summary>
 <br>
@@ -61,6 +62,8 @@
 <hr>
 
 # READLINE
+
+[Back to Summary](#summary)
 
 The readline function is not a standard C function, but it's part of the GNU Readline library, which provides a set of functions for use by applications that allow users to edit command lines as they are typed in.
 
