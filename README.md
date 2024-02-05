@@ -13,7 +13,7 @@
 
 The `minihell` project at 42 immerses students in UNIX shell development using C, focusing on system calls, process management, and parsing.
 
-It challenges them to create a minimalistic shell with fundamental UNIX command-line functionalities, fostering skills in system-level programming and imparting practical knowledge of core shell components.
+It challenges them to create a minimalistic shell with fundamental UNIX command-line functionalities, fostering skills in system-level programming and imparting practical knowledge of core shell components.  
 
 ## 🤔 WHAT'S THE POINT OF THIS REPO ?
 
