@@ -67,7 +67,9 @@ From here, you are absolutely free to organize your files as you wish !
 
 ## 🚨 DISCLAIMER: 
 
-i wish this repository to becomes a collaborative effort aimed at centralizing resources for the 42 project `minishell`. I encourage and appreciate your contributions via pull requests, because we all need to practive our collaborative skills;
+I wish this repository to becomes a collaborative effort aimed at centralizing resources for the 42 project `minishell`.
+
+I highly encourage and appreciate your contributions via pull requests, because we all need to practice our collaborative skills;
 
 however, it is **crucial** to note the following:
 
@@ -77,7 +79,7 @@ however, it is **crucial** to note the following:
 
   3. **Authorship Accountability**: The maintainers cannot be held responsible for the content provided by contributors. Each contributor is accountable for their work, and disputes or issues arising from contributed content should be resolved directly with the author.
 
-By submitting a pull request, you acknowledge and accept these terms.
+*By submitting a pull request, you acknowledge and accept these terms.*
 
 Thank you for your cooperation in maintaining the quality and integrity of this collaborative repository 😊
 
