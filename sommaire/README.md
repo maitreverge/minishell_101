@@ -6,7 +6,7 @@ Here, you'll find a variety of resources including code snippets, function descr
 
 This repository aims to provide a comprehensive understanding of the `Minishell` project, making it a valuable tool for anyone working on or studying this subject at 42.
 
-Dive in to explore more about each resource!
+Dive in to explore more about each resource! 
 
 <br>
 
