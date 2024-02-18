@@ -12,7 +12,7 @@ Dive in to explore more about each resource!
 
 - **DOCUMENTATION**
   + [Functions Overview](https://github.com/maitreverge/minishell_101/blob/3b378e14123888a2d02b868a2b4bd151bc954fdb/ressources/maitreverge/functions_overview/README.md)
-  + [How to "hide" `readline` leaks](https://github.com/maitreverge/minishell_101/blob/3b378e14123888a2d02b868a2b4bd151bc954fdb/ressources/maitreverge/functions_overview/README.md)
+  + [How to "hide" `readline` leaks](https://github.com/maitreverge/minishell_101/blob/9d52a04a8982d72db30a0fdff0aca5626ac53b8f/ressources/maitreverge/valgrind_readline/README.md)
 - **SCRIPTS**
 - **CUSTOM PROGRAMS**
 
