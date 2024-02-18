@@ -62,7 +62,7 @@ We can't do anything about leaks from `readline`, the goal here it to tell valgr
 
 At your root repository of your minishell project, create a file called `valgrind.supp`
 
-> [!NOTE]  
+> [!TIP]  
 > `valgrind.supp` is a convention name that has nothing to do with the functionality itself. Name it as you wish.
 
 Next, enter in this file :
@@ -84,11 +84,16 @@ In simpler term, this rule tells `valgrind` to ignore any memory leaks that come
 
 ### STEP 2 : Using a Valgrind Suppression File
 
-Now that you created your file `valgrind.supp`, you need to adress this file to `valgrind` with a special flags which is
+Now that you created your file `valgrind.supp`, you need to adress this file to `valgrind` with a special flags which is :
 
 ``` bash
 valgrind --suppressions=valgrind.supp ./minishell
 ```
+
+> [!NOTE]  
+> If your valgrind suppression file is called `foo`, the command should be `valgrind --suppressions=foo ./minishell`.
+
+
 Here is the valgrind output this time :
 ``` python
 ==44683== HEAP SUMMARY:
@@ -109,9 +114,9 @@ Here is the valgrind output this time :
 
 Notice that without this tool, I wouldn't be able to track another 16 bytes that have been mixed with `readline` leaks...
 
-Which now are on a new line `suppressed`.
+which now are on a new line under `suppressed`.
 
-You did not have really suppressed them, you have "moved" them.
+You did not have really suppressed them, you just have "moved" them.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
