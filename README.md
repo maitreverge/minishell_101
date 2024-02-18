@@ -5,7 +5,7 @@
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
  
-## [**GO TO SUMMARY**](https://github.com/maitreverge/minishell_101/tree/fa7aa41f274a86e0df12822a12d2d8b54bafdb89/sommaire)
+## [**GO TO SUMMARY**](https://github.com/maitreverge/minishell_101/tree/master/sommaire)
 
 
 
@@ -62,7 +62,7 @@ For keeping everything nice and intelligible, here is the global structure of th
 
 From here, you are absolutely free to organize your files as you wish !
 
-## [**GO TO SUMMARY**](https://github.com/maitreverge/minishell_101/tree/fa7aa41f274a86e0df12822a12d2d8b54bafdb89/sommaire)
+## [**GO TO SUMMARY**](https://github.com/maitreverge/minishell_101/tree/master/sommaire)
 
 
 ## 🚨 DISCLAIMER: 
