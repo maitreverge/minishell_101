@@ -67,8 +67,8 @@ Keep in mind that I consider a **INVALID COMMAND** a command that have no conseq
 |   `echo $0`   |  ✅ | -  |  Outputs `bash`   |
 |   `echo bonjour \| rev > test test test test`   |  ✅ | -  |     |
 |   `echo $?`   |  ✅ | 🚫  |     |
-|   ``   |  ✅ | 🚫  |     |
-|   ``   |  ✅ | 🚫  |     |
+|   `echo bonjour\|rev\|wc`   |  ✅ | -  |  Yes, there is no lines in the input.  |
+|   `ls \| exit`   |  ✅ | -  |     |
 |   ``   |  ✅ | 🚫  |     |
 |   ``   |  ✅ | 🚫  |     |
 |   ``   |  ✅ | 🚫  |     |
