@@ -18,7 +18,7 @@ Sometimes, ***meh*** 🤷 prompts doesn't makes sense at all...
 I'll provide a few explanations on specific commands, a few insights sometimes...
 
 > [!CAUTION]
-> Keep in mind that some commands will **crush your sould and destrooy your will to live with the efficiency of a bulldozer**.
+> Keep in mind that some commands will **crush your soul and destroy your will to live with the efficiency of a bulldozer**.
 
 
 
@@ -30,5 +30,56 @@ Well, not necessarly. My minishell **sucks**, yours maybe a little more or a lit
 
 Well, you chosse. Handle everything asked in the subject is a good start. Draw the line yourself, and ✨enjoy the process✨.
 
-| Prompt | Valid Command | Invalid Command | Comment|
+Keep in mind that I consider a **INVALID COMMAND** a command that have no consequence or have a undefined behaviour regarding of the `minishell` project.
+
+| Prompt | Valid Input | Invalid Input | Note |
 |--------|---------------|-----------------|--------|
+|   `\|`   |  - | 🚫  |     |
+|   ```\|\|\|\|\|\|\|```  |  - | 🚫  |     |
+|   `><<>\|>\|><>>\|`   |  - | 🚫  |     |
+|   `iwjegrfikwregk`   |  - | 🚫  |     |
+|   `erngkjdnsreg \| echo bonjour \| rev`   |  ✅ |   |  Outputs an error message AND `ruojnob`   |
+|   `e'c'"h"'o' b"onj"'o''u''r'`   |  ✅ |   |  Outputs `bonjour`   |
+|   `>`   | -  | 🚫  |     |
+|   `<`   |  - | 🚫  |     |
+|   `>>`   | -  | 🚫  |     |
+|   `<<`   |  - | 🚫  |     |
+|   `> test`   |  ✅ | -  |     |
+|   `> test \| echo bonjour`   |  ✅ | -  |     |
+|   `> echo bonjour`   | -  | 🚫  |     |
+|   `echo bonjour >`   |  - | 🚫  |     |
+|   `echo bonjour > \| `   |  - | 🚫  |     |
+|   `\| echo bonjour`   |  - | 🚫  |     |
+|   `>> test`   |  ✅ |   |     |
+|   `>> test \| echo bonjour`   |  ✅ | -  |     |
+|   `>> echo bonjour`   |  - | 🚫  |     |
+|   `echo bonjour >> `   |  - | 🚫  |     |
+|   `echo bonjour >> \|`   |  - | 🚫  |     |
+|   `echo bonjour \| rev \| >> test \| echo bonjour`   |  ✅ | -  |  create an empty file called `test`, DOES NOT erase his content if it does exists, outputs `bonjour` from the second echo   |
+|   `< existing_file`   |  ✅ | -  |   |
+|   `< not_existing_file`   |  - | 🚫  |     |
+|   `< existing_file not_existing_file`   |  ✅ | -  |     |
+|   `< not_existing_file existing_file`   |  - | 🚫  |     |
+|   `< existing_file \| echo bonjour`   |  ✅ | -  |     |
+|   `<< wlrgnjbeddfvdkrtfn \| echo bonjour`   |  ✅ | -  |    |
+|   `<<  EOF \| echo bonjour \| rev`   |  ✅ | -  |     |
+|   `<< EOF wrigjeriju \| echo bonjour`   |  ✅ | -  |     |
+|   `echo $0`   |  ✅ | -  |  Outputs `bash`   |
+|   `echo bonjour \| rev > test test test test`   |  ✅ | -  |     |
+|   `echo $?`   |  ✅ | 🚫  |     |
+|   ``   |  ✅ | 🚫  |     |
+|   ``   |  ✅ | 🚫  |     |
+|   ``   |  ✅ | 🚫  |     |
+|   ``   |  ✅ | 🚫  |     |
+|   ``   |  ✅ | 🚫  |     |
+|   ``   |  ✅ | 🚫  |     |
+|   ``   |  ✅ | 🚫  |     |
+|   ``   |  ✅ | 🚫  |     |
+|   ``   |  ✅ | 🚫  |     |
+|   ``   |  ✅ | 🚫  |     |
+|   ``   |  ✅ | 🚫  |     |
+|   ``   |  ✅ | 🚫  |     |
+|   ``   |  ✅ | 🚫  |     |
+
+
+
