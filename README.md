@@ -27,6 +27,8 @@ The creation of this GitHub repo was the result of a reflection among 42 student
 - [FUNCTIONS OVERVIEW](https://github.com/maitreverge/minishell_101/tree/master/ressources/functions_overview/)
 - [VALGRIND READLINE](https://github.com/maitreverge/minishell_101/tree/master/ressources/valgrind_readline)
 
+## RESSOURCES :
+[YOUTUBE VIDEO 1](https://youtu.be/ubt-UjcQUYg?si=pw96mb1qNF8aX1-E)
 
 
 🚀 Happy coding!
