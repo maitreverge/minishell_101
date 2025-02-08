@@ -2,13 +2,7 @@
   <img src="img/minishell_101.png" width="70%"/>
 </p>
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
  
-## [**GO TO SUMMARY**](https://github.com/maitreverge/minishell_101/tree/master/sommaire)
-
-
-
 ## 🚀 WHAT IS MINISHELL ?
 
 The `minihell` project at 42 immerses students in UNIX shell development using C, focusing on system calls, process management, and parsing.
