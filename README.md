@@ -26,9 +26,11 @@ It challenges them to create a minimalistic shell with fundamental UNIX command-
 - [DEAL WITH READLINE LEAKS](https://github.com/maitreverge/minishell_101/tree/master/ressources/valgrind_readline)
 
 ## 📺 VIDEOS :
-[YOUTUBE VIDEO 1](https://youtu.be/ubt-UjcQUYg?si=pw96mb1qNF8aX1-E)
-[YOUTUBE VIDEO 2](https://youtu.be/ZjzMdsTWF0U?si=idUKKm46haWFGxCk)
-[YOUTUBE VIDEO 3](https://youtu.be/Yf380zTr_ro?si=979uyB81DxVdpUpT)
+- [YOUTUBE VIDEO 1](https://youtu.be/ubt-UjcQUYg?si=pw96mb1qNF8aX1-E)
+- [YOUTUBE VIDEO 2](https://youtu.be/ZjzMdsTWF0U?si=idUKKm46haWFGxCk)
+- [YOUTUBE VIDEO 3](https://youtu.be/Yf380zTr_ro?si=979uyB81DxVdpUpT)
+
+## 🤝 CONTRIBUTION
 
 If you got usefull ressources for Minishell, feel free to submit a PR by adding them in `/ressources` folder, and list it above under the appropriate description.
 
