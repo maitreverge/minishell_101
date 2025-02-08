@@ -21,7 +21,7 @@ The creation of this GitHub repo was the result of a reflection among 42 student
 
 - **Centralize** and **organize** resources of all kinds (*shell scripts and other languages, explanatory README.md files, unique web resources*) to give a `minishell` project overview for students.
 
-## SUMMARY :
+## READ ME :
 
 - [EDGE_CASES](https://github.com/maitreverge/minishell_101/tree/master/ressources/edge_cases/)
 - [FUNCTIONS OVERVIEW](https://github.com/maitreverge/minishell_101/tree/master/ressources/functions_overview/)
@@ -29,6 +29,8 @@ The creation of this GitHub repo was the result of a reflection among 42 student
 
 ## RESSOURCES :
 [YOUTUBE VIDEO 1](https://youtu.be/ubt-UjcQUYg?si=pw96mb1qNF8aX1-E)
+
+If you got usefull ressources for Minishell, feel free to add it it `/ressouces` folder and list it above within a Pull Request !
 
 
 🚀 Happy coding!
