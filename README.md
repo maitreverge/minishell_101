@@ -25,7 +25,7 @@ The creation of this GitHub repo was the result of a reflection among 42 student
 
 - [EDGE_CASES](https://github.com/maitreverge/minishell_101/tree/master/ressources/edge_cases/)
 - [FUNCTIONS OVERVIEW](https://github.com/maitreverge/minishell_101/tree/master/ressources/functions_overview/)
-- [VALGRIND READLINE](https://github.com/maitreverge/minishell_101/tree/master/ressources/valgrind_realine)
+- [VALGRIND READLINE](https://github.com/maitreverge/minishell_101/tree/master/ressources/valgrind_readline)
 
 
 
