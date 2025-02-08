@@ -17,20 +17,20 @@ It challenges them to create a minimalistic shell with fundamental UNIX command-
     
 ## 🤔 WHAT'S THE POINT OF THIS REPO ?
 
-The creation of this GitHub repo was the result of a reflection among 42 students during our minishell project:
-
 - **Centralize** and **organize** resources of all kinds (*shell scripts and other languages, explanatory README.md files, unique web resources*) to give a `minishell` project overview for students.
 
-## READ ME :
+## 📰 READ-ME :
 
 - [EDGE_CASES](https://github.com/maitreverge/minishell_101/tree/master/ressources/edge_cases/)
-- [FUNCTIONS OVERVIEW](https://github.com/maitreverge/minishell_101/tree/master/ressources/functions_overview/)
-- [VALGRIND READLINE](https://github.com/maitreverge/minishell_101/tree/master/ressources/valgrind_readline)
+- [AUTHORIZED FUNCTIONS OVERVIEW](https://github.com/maitreverge/minishell_101/tree/master/ressources/functions_overview/)
+- [DEAL WITH READLINE LEAKS](https://github.com/maitreverge/minishell_101/tree/master/ressources/valgrind_readline)
 
-## RESSOURCES :
+## 📺 VIDEOS :
 [YOUTUBE VIDEO 1](https://youtu.be/ubt-UjcQUYg?si=pw96mb1qNF8aX1-E)
+[YOUTUBE VIDEO 2](https://youtu.be/ZjzMdsTWF0U?si=idUKKm46haWFGxCk)
+[YOUTUBE VIDEO 3](https://youtu.be/Yf380zTr_ro?si=979uyB81DxVdpUpT)
 
-If you got usefull ressources for Minishell, feel free to add it it `/ressouces` folder and list it above within a Pull Request !
+If you got usefull ressources for Minishell, feel free to submit a PR by adding them in `/ressources` folder, and list it above under the appropriate description.
 
 
 🚀 Happy coding!
